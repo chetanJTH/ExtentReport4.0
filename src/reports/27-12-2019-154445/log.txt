@@ -1,0 +1,298 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[15:44:45]: =====START TEST=====
+[15:45:06]: [Driver on SamsungJ7] setup is completed!
+[15:45:06]: [APP] ProductMarketing is running...
+[15:45:07]: AddText is RUNNING...
+[15:45:13]: My Design Button Is Visible
+[15:45:14]: My Design Button Clickable
+[15:45:16]: Create Own Button Is Visible
+[15:45:16]: Create Own Button Clickable
+[15:45:19]: Custom Size Selected
+[15:45:23]: AddText Button Is Visible
+[15:45:23]: AddText Button Clickable
+[15:45:25]: Input Text Field Is Visible
+[15:45:26]: Input Text Auto
+[15:45:30]: Ok Button Is Visible
+[15:45:30]: Ok Button Is Clickable
+[15:45:32]: AddText is Passed
+[15:45:32]: EditText is RUNNING...
+[15:45:34]: Edit Text Is Visible
+[15:45:34]: Edit Text Is Clickable
+[15:45:36]: Click On Text Feild
+[15:45:38]: Text is Edited
+[15:45:41]: Press Ok Button
+[15:45:44]: EditText is Passed
+[15:45:44]: TextPositionButtons is RUNNING...
+[15:45:44]: Top Position Button is Displayed
+[15:45:44]: Top position button is Clickable
+[15:45:45]: Bottom Position Button is Displayed
+[15:45:45]: Bottom position button is Clickable
+[15:45:46]: Left Position Button is Displayed
+[15:45:46]: Left position button is Clickable
+[15:45:47]: Right Position Button is Displayed
+[15:45:47]: Right position button is Clickable
+[15:45:47]: All Position Buttons Working Properly
+[15:45:47]: TextPositionButtons is Passed
+[15:45:47]: TextRotation is RUNNING...
+[15:45:48]: TextRotationCase Button is Displayed
+[15:45:48]: TextRotationCase Button is Clickable
+[15:45:49]: AntiClockRotate Button is Displayed
+[15:45:50]: AntiClockRotate button is Clickable
+[15:45:50]: ClockWiseRotate Button is Displayed
+[15:45:50]: ClockWiseRotate button is Clickable
+[15:45:55]: Text Rotate Forward Successfully
+[15:46:00]: Text Rotate  Backward Successfully
+[15:46:02]: TextRotation is Passed
+[15:46:02]: TextSize is RUNNING...
+[15:46:03]: Size Button is Displayed
+[15:46:04]: Size Button is Clickable
+[15:46:05]: ZoomInButton Button is Displayed
+[15:46:05]: ZoomInButton button is Clickable
+[15:46:06]: ZoomOutButton Button is Displayed
+[15:46:06]: ZoomOutButton button is Clickable
+[15:46:09]: Text Zoom In
+[15:46:15]: Text Zoom Out
+[15:46:16]: TextSize is Passed
+[15:46:16]: AddColor is RUNNING...
+[15:46:17]: FontColor Button Is Visible
+[15:46:17]: FontColor Button Is Clickable
+[15:46:18]: swipe
+[15:46:21]: swipe
+[15:46:23]: total: 9
+[15:46:23]: FontColor is selected
+[15:46:25]: FontColor Picker Is Visible
+[15:46:25]: FontColor Picker Is Clickable
+[15:46:37]: AddColor is Passed
+[15:46:37]: FontColorCode is RUNNING...
+[15:46:38]: FontColor Picker Is Clickable
+[15:46:40]: Color Code Button Is Visible
+[15:46:40]: Color Code Button Is Clickable
+[15:46:49]: FontColorCode is Passed
+[15:46:49]: FontLibrary is RUNNING...
+[15:46:49]: Font Button Is Visible
+[15:46:50]: Font Button Is Clickable
+[15:46:51]: swipe
+[15:46:53]: total: 3
+[15:46:53]: Font is selected
+[15:46:55]: Add Font Button Is Visible
+[15:46:55]: Add Font Button Is Clickable
+[15:46:57]: Free Font Button Is Visible
+[15:46:58]: Free Font Button Is Clickable
+[15:47:17]: Back Button is Clicked
+[15:47:18]: Downloaded Font BrockScript
+[15:47:20]: Add Font Button Is Clickable
+[15:47:22]: HowTo Button Is Visible
+[15:47:22]: HowTo Button Is Clickable
+[15:47:26]: Tutorial Video Is Visible
+[15:47:26]: Back Button Button Is Visible
+[15:47:27]: Back Button Button Is Clickable
+[15:47:29]: Back Button Button Is Visible
+[15:47:29]: Back Button Button Is Clickable
+[15:47:29]: FontLibrary is Passed
+[15:47:29]: Shadow is RUNNING...
+[15:47:30]: Shadow Button Is Visible
+[15:47:31]: Shadow Button Clickable
+[15:47:35]: Max Shadow
+[15:47:41]: Min Shadow
+[15:47:42]: Shadow is Passed
+[15:47:42]: FontStyle is RUNNING...
+[15:47:43]: FontStyleCase Button Is Visible
+[15:47:43]: FontStyleCase Button Is Clickable
+[15:47:44]: Underline Button Is Visible
+[15:47:44]: Underline Button Is Clickable
+[15:47:46]: UpperCase Button Is Visible
+[15:47:46]: UpperCase Button Is Clickable
+[15:47:48]: LowerCase Button Is Visible
+[15:47:48]: LowerCase Button Is Clickable
+[15:47:50]: TitleCase Button Is Visible
+[15:47:50]: TitleCase Button Is Clickable
+[15:47:52]: FontStyle is Passed
+[15:47:52]: FontOpacity is RUNNING...
+[15:47:52]: Opacity Button Is Visible
+[15:47:52]: Opacity Button Is Clickable
+[15:47:56]: Descrease Opacity
+[15:48:03]: Increase Opacity
+[15:48:04]: FontOpacity is Passed
+[15:48:04]: LatterSpacing is RUNNING...
+[15:48:05]: Letter Spacing Button Is Visible
+[15:48:05]: Letter Spacing Button Is Clickable
+[15:48:09]: Increase Spacing
+[15:48:14]: Descrease Spacing
+[15:48:19]: LatterSpacing is Passed
+[15:48:19]: UndoRedo is RUNNING...
+[15:48:26]: My design page clicked
+[15:48:28]: Create own clicked
+[15:48:31]: Custom size selected
+[15:48:34]: Add text button clicked
+[15:48:39]: Ok button clicked
+[15:48:41]: Undo Button Is Visible
+[15:48:41]: Undo Button Clickable
+[15:48:43]: Redo Button Is Visible
+[15:48:43]: Redo Button Clickable
+[15:48:45]: UndoRedo is Passed
+[15:48:45]: UndoRotaion is RUNNING...
+[15:48:45]: TextRotationCase button clicked
+[15:48:50]: Undo button clicked
+[15:48:52]: Redo button clicked
+[15:48:53]: UndoRotaion is Passed
+[15:48:53]: UndoSize is RUNNING...
+[15:48:54]: Size button clicked
+[15:48:59]: Undo button clicked
+[15:49:00]: Redo button clicked
+[15:49:06]: UndoSize is Passed
+[15:49:06]: UndoColor is RUNNING...
+[15:49:06]: FontColor button clicked
+[15:49:08]: total: 9
+[15:49:08]: FontColor is selected
+[15:49:08]: Undo button clicked
+[15:49:10]: Redo button clicked
+[15:49:12]: UndoColor is Passed
+[15:49:12]: UndoFont is RUNNING...
+[15:49:12]: Font Button Clicked
+[15:49:13]: swipe
+[15:49:16]: total: 3
+[15:49:16]: Font is selected
+[15:49:16]: Undo button clicked
+[15:49:18]: Redo button clicked
+[15:49:20]: UndoFont is Passed
+[15:49:20]: UndoShadow is RUNNING...
+[15:49:21]: Shadow Button Clickable
+[15:49:26]: Max Shadow
+[15:49:26]: Undo button clicked
+[15:49:28]: Redo button clicked
+[15:49:30]: UndoShadow is Passed
+[15:49:30]: UndoStyle is RUNNING...
+[15:49:31]: FontStyleCase Button Is Clickable
+[15:49:32]: Underline Button Is Clickable
+[15:49:32]: UpperCase Button Is Clickable
+[15:49:33]: LowerCase Button Is Clickable
+[15:49:34]: TitleCase Button Is Clickable
+[15:49:35]: Undo button clicked
+[15:49:35]: Undo button clicked
+[15:49:36]: Undo button clicked
+[15:49:37]: Undo button clicked
+[15:49:39]: Redo button clicked
+[15:49:39]: Redo button clicked
+[15:49:40]: Redo button clicked
+[15:49:40]: Redo button clicked
+[15:49:42]: UndoStyle is Passed
+[15:49:42]: UndoOpacity is RUNNING...
+[15:49:43]: Opacity Button Is Clickable
+[15:49:48]: Descrease Opacity
+[15:49:49]: Undo button clicked
+[15:49:51]: Redo button clicked
+[15:49:53]: UndoOpacity is Passed
+[15:49:53]: UndoLatterSpace is RUNNING...
+[15:49:53]: Letter Spacing Button Is Clickable
+[15:49:59]: Increase Spacing
+[15:50:00]: Undo button clicked
+[15:50:02]: Redo button clicked
+[15:50:07]: UndoLatterSpace is Passed
+[15:50:07]: PositionLock is RUNNING...
+[15:50:14]: My Design Button Clickable
+[15:50:16]: Create Own Button Clickable
+[15:50:19]: Custom Size Selected
+[15:50:22]: AddText Button Clickable
+[15:50:24]: Input Text Auto
+[15:50:25]: Ok Button Is Clickable
+[15:50:27]: Lock Element
+[15:50:29]: Top Position Button Clicked
+[15:50:30]: Bottom Position Button Clicked
+[15:50:31]: Left Position Button Clicked
+[15:50:32]: Right Position Button Clicked
+[15:50:34]: PositionLock is Passed
+[15:50:34]: RotationLock is RUNNING...
+[15:50:34]: TextRotationCase Button Clicked
+[15:50:35]: AntiClockRotate Button Clicked
+[15:50:37]: ClockWiseRotate Button Clicked
+[15:50:41]: Text Rotate Forward Successfully
+[15:50:45]: Text Rotate  Backward Successfully
+[15:50:47]: RotationLock is Passed
+[15:50:47]: SizeLock is RUNNING...
+[15:50:47]: Size button clicked
+[15:50:48]: Zoom in button clicked
+[15:50:50]: Zoom out button Clicked
+[15:50:51]: Unlock Element
+[15:50:54]: SizeLock is Passed
+[15:50:54]: FrameLayer is RUNNING...
+[15:51:02]: total: 2
+[15:51:27]: FrameLayer is FAILED...
+[15:51:31]: FontParagraph is RUNNING...
+[15:51:36]: My Design Button Clickable
+[15:51:38]: Create Own Button Clickable
+[15:51:41]: Custom Size Selected
+[15:51:45]: AddText Button Clickable
+[15:51:47]: Click On Text Feild
+[15:51:47]: Paragraph CheckBox Is Visible
+[15:51:47]: Paragraph CheckBox Is Clickable
+[15:51:49]: Text is Entered
+[15:51:52]: Press Ok Button
+[15:51:54]: FontParagraph is Passed
+[15:51:54]: ParagraphEdit is RUNNING...
+[15:51:55]: Edit Text Is Clickable
+[15:51:56]: Click On Text Feild
+[15:51:57]: Paragraph CheckBox Is Clickable
+[15:51:59]: Text is Edited
+[15:52:02]: Press Ok Button
+[15:52:04]: ParagraphEdit is Passed
+[15:52:04]: ParagraphVerticalSpace is RUNNING...
+[15:52:04]: finding...
+[15:52:04]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:52:35]: isDisplayed: false
+[15:52:35]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:53:06]: isDisplayed: false
+[15:53:06]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:53:36]: isDisplayed: false
+[15:53:36]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:53:38]: isDisplayed: true
+[15:53:38]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:53:38]: find completed...
+[15:53:39]: Vertical Spacing Button Is Visible
+[15:53:40]: Vertical Spacing Button Is Clickable
+[15:53:44]: Increase Spacing
+[15:53:50]: Descrease Spacing
+[15:53:51]: ParagraphVerticalSpace is Passed
+[15:53:51]: ParagraphStyle is RUNNING...
+[15:53:51]: finding...
+[15:53:51]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Style"]
+[15:53:52]: isDisplayed: true
+[15:53:52]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Style"]
+[15:53:52]: find completed...
+[15:53:53]: Left Alignment Button Is Visible
+[15:53:54]: Left Alignment Button Is Clickable
+[15:53:56]: Center Alignment Button Is Visible
+[15:53:56]: Center Alignment Button Is Clickable
+[15:53:59]: Right Alignment Button Is Visible
+[15:53:59]: Right Alignment Button Is Clickable
+[15:54:06]: ParagraphStyle is Passed
+[15:54:06]: FontAutoSave is RUNNING...
+[15:54:13]: My Design Button Clickable
+[15:54:15]: Create Own Button Clickable
+[15:54:18]: Custom Size Selected
+[15:54:21]: AddText Button Clickable
+[15:54:24]: Click On Text Feild
+[15:54:26]: Text is Entered
+[15:54:28]: Press Ok Button
+[15:54:42]: Select MyDesign Page
+[15:54:45]: Card Is Present In My Design
+[15:54:45]: AutoSave Card Is Present In My Design
+[15:54:45]: AutoSave Card Clicked
+[15:55:39]: Select Edit Button
+[15:55:41]: FontAutoSave is Passed
+[15:55:41]: FontSave is RUNNING...
+[15:55:42]: AddText Button Clickable
+[15:55:44]: Click On Text Feild
+[15:55:45]: Text is Entered
+[15:55:48]: Press Ok Button
+[15:55:51]: Size Button is Clickable
+[15:55:54]: Text Zoom In
+[15:55:56]: Save Button Is Visible
+[15:55:56]: Save Button Clicked
+[15:55:57]: Original Option Visible
+[15:55:58]: Original Option Clicked
+[15:56:01]: FontSave is FAILED...
+[15:56:02]: [APP] ProductMarketing has been stopped
+[15:56:02]: =====FINISH TEST=====

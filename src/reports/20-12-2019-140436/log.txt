@@ -1,0 +1,160 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[14:05:04]: [Driver on SamsungJ7] setup is completed!
+[14:05:04]: [APP] ProductMarketing is running...
+[14:05:12]: Select Edit Button
+[14:05:13]: Navigate To My Design
+[14:05:15]: Select Create Your Own
+[14:05:17]: Select Custom Template Card
+[14:05:21]: AddImage Button Is Visible
+[14:05:21]: AddImage Button Clickable
+[14:05:23]: Choose Image Button Is Visible
+[14:05:26]: Choose Image Button Clickable
+[14:05:30]: Select Image
+[14:05:32]: Erase Button Is Visible
+[14:05:32]: Erase Button Clickable
+[14:05:34]: EraseImage Button Is Visible
+[14:05:34]: EraseImage Button Clickable
+[14:05:44]: Save Button Is Visible
+[14:05:45]: Save Button Clickable
+[14:05:47]: Undo Button Clicked
+[14:05:48]: Erase Button Clickable
+[14:05:50]: EraseImage Button Clickable
+[14:06:00]: Save Button Clickable
+[14:06:07]: App Minimize
+[14:06:11]: Undo Button Clicked
+[14:06:12]: Erase Button Clickable
+[14:06:14]: AutoEraseImage Button Is Visible
+[14:06:14]: AutoEraseImage Button Clickable
+[14:06:16]: Save Croped Shape
+[14:06:19]: Undo Button Clicked
+[14:06:20]: Top position button is Clickable
+[14:06:20]: Bottom position button is Clickable
+[14:06:21]: Left position button is Clickable
+[14:06:22]: Right position button is Clickable
+[14:06:22]: All Position Buttons Working Properly
+[14:06:23]: TextRotationCase Button is Clickable
+[14:06:24]: AntiClockRotate button is Clickable
+[14:06:25]: ClockWiseRotate button is Clickable
+[14:06:29]: Image Rotate Forward Successfully
+[14:06:34]: Image Rotate  Backward Successfully
+[14:06:36]: Size Button is Clickable
+[14:06:37]: ZoomInButton button is Clickable
+[14:06:38]: ZoomOutButton button is Clickable
+[14:06:42]: Image Zoom In
+[14:06:48]: Image Zoom Out
+[14:06:50]: Crop Button Is Visible
+[14:06:51]: Crop Button Clickable
+[14:06:52]: CropAspect Button Is Visible
+[14:06:53]: CropAspect Button Clickable
+[14:06:54]: Aspect Crop Editor Visible
+[14:06:54]: StateScale Button Is Visible
+[14:06:55]: StateScale Button Clickable
+[14:06:56]: Scale Scroll Seekbar Is Visible
+[14:07:00]: Aspect Ration Scale Scrolling
+[14:07:02]: StateAspectRatio Button Is Visible
+[14:07:02]: StateAspectRatio Button Clickable
+[14:07:06]: StateRotate Button Is Visible
+[14:07:06]: StateRotate Button Clickable
+[14:07:08]: Scale Rotate Seekbar Is Visible
+[14:07:10]: Image Rotate Forward Successfully
+[14:07:14]: Image Rotate  Backward Successfully
+[14:07:15]: Save Button Is Visible
+[14:07:15]: Save Button Clickable
+[14:07:17]: ImgCropShape Button Is Visible
+[14:07:17]: ImgCropShape Button Clickable
+[14:07:19]: Shape Selected
+[14:07:21]: Crop Editor Visible
+[14:07:21]: Shape Button Is Visible
+[14:07:21]: Shape Button Clickable
+[14:07:23]: fromPoint (1068, 1827)
+[14:07:23]: endPoint (86, 1827)
+[14:07:23]: total: 7
+[14:07:24]: Save Croped Shape
+[14:07:26]: ImgCropShape Button Clickable
+[14:07:28]: Shape Selected
+[14:07:30]: BkGround Button Is Visible
+[14:07:30]: BkGround Button Clickable
+[14:07:31]: Click on Pattern
+[14:07:34]: fromPoint (1051, 1831)
+[14:07:34]: endPoint (63, 1831)
+[14:07:34]: total: 9
+[14:07:35]: Save Croped Shape
+[14:07:39]: ImgCropShape Button Clickable
+[14:07:41]: Shape Selected
+[14:07:43]: Adjustment Button Is Visible
+[14:07:43]: Adjustment Button Clickable
+[14:07:45]: Rotate Button Is Visible
+[14:07:45]: Rotate Button Clickable
+[14:07:46]: AntiClockRotate button is Clickable
+[14:07:46]: ClockWiseRotate button is Clickable
+[14:07:49]: Image Rotate Forward Successfully
+[14:07:53]: Image Rotate  Backward Successfully
+[14:07:56]: Save Croped Shape
+[14:07:59]: ImgCropShape Button Clickable
+[14:08:01]: Shape Selected
+[14:08:03]: Adjustment Button Clickable
+[14:08:04]: Size Button Is Visible
+[14:08:04]: Size Button Clickable
+[14:08:05]: ZoomInButton button is Clickable
+[14:08:05]: ZoomOutButton button is Clickable
+[14:08:07]: Image Zoom In
+[14:08:12]: Image Zoom Out
+[14:08:15]: Save Croped Shape
+[14:08:18]: finding...
+[14:08:18]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[14:08:18]: isDisplayed: true
+[14:08:19]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[14:08:19]: find completed...
+[14:08:20]: Opacity Button is Clickable
+[14:08:24]: Descrease Opacity
+[14:08:29]: Increase Opacity
+[14:08:41]: My Design Button Clickable
+[14:08:43]: Create Own Button Clickable
+[14:08:46]: Custom Size Selected
+[14:08:49]: Shape Button Is Clickable
+[14:08:53]: finding...
+[14:08:53]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Square"]
+[14:08:53]: isDisplayed: true
+[14:08:53]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Square"]
+[14:08:53]: find completed...
+[14:08:57]: Lock Element
+[14:08:59]: Top Position Button Clicked
+[14:09:01]: Bottom Position Button Clicked
+[14:09:02]: Left Position Button Clicked
+[14:09:03]: Right Position Button Clicked
+[14:09:05]: TextRotationCase Button Clicked
+[14:09:06]: AntiClockRotate Button Clicked
+[14:09:08]: ClockWiseRotate Button Clicked
+[14:09:12]: Text Rotate Forward Successfully
+[14:09:17]: Text Rotate  Backward Successfully
+[14:09:19]: Size button clicked
+[14:09:20]: Zoom in button clicked
+[14:09:22]: Zoom out button Clicked
+[14:09:23]: Unlock Element
+[14:09:24]: finding...
+[14:09:24]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Edit"]
+[14:09:24]: isDisplayed: true
+[14:09:24]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Edit"]
+[14:09:25]: find completed...
+[14:09:26]: Edit Image Is Visible
+[14:09:26]: Edit Image Is Clickable
+[14:09:30]: finding...
+[14:09:30]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Square"]
+[14:09:30]: isDisplayed: true
+[14:09:30]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Square"]
+[14:09:31]: find completed...
+[14:09:35]: finding...
+[14:09:35]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Color"]
+[14:09:36]: isDisplayed: true
+[14:09:36]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Color"]
+[14:09:36]: find completed...
+[14:09:38]: FontColor Button Is Clickable
+[14:09:39]: swipe
+[14:09:41]: swipe
+[14:09:44]: total: 9
+[14:09:44]: FontColor is selected
+[14:09:45]: FontColor Picker Is Clickable
+[14:09:57]: [APP] ProductMarketing has been stopped

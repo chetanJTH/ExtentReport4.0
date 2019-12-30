@@ -1,0 +1,84 @@
+
+Copyright Â© 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[14:05:56]: [Driver on SamsungJ7] setup is completed!
+[14:05:56]: [APP] ProductMarketing is running...
+[14:06:04]: Select Edit Button
+[14:06:05]: Navigate To My Design
+[14:06:07]: Select Create Your Own
+[14:06:09]: Select Custom Template Card
+[14:06:13]: AddImage Button Is Visible
+[14:06:13]: AddImage Button Clickable
+[14:06:15]: Choose Image Button Is Visible
+[14:06:18]: Choose Image Button Clickable
+[14:06:21]: Select Image
+[14:06:23]: Erase Button Is Visible
+[14:06:23]: Erase Button Clickable
+[14:06:25]: EraseImage Button Is Visible
+[14:06:25]: EraseImage Button Clickable
+[14:06:35]: Save Button Is Visible
+[14:06:35]: Save Button Clickable
+[14:06:37]: Undo Button Clicked
+[14:06:38]: Erase Button Clickable
+[14:06:40]: EraseImage Button Clickable
+[14:06:49]: Save Button Clickable
+[14:06:57]: App Minimize
+[14:07:00]: Undo Button Clicked
+[14:07:01]: Erase Button Clickable
+[14:07:03]: AutoEraseImage Button Is Visible
+[14:07:03]: AutoEraseImage Button Clickable
+[14:07:05]: Save Croped Shape
+[14:07:07]: Undo Button Clicked
+[14:07:08]: Top position button is Clickable
+[14:07:09]: Bottom position button is Clickable
+[14:07:09]: Left position button is Clickable
+[14:07:10]: Right position button is Clickable
+[14:07:10]: All Position Buttons Working Properly
+[14:07:11]: TextRotationCase Button is Clickable
+[14:07:12]: AntiClockRotate button is Clickable
+[14:07:13]: ClockWiseRotate button is Clickable
+[14:07:17]: Image Rotate Forward Successfully
+[14:07:22]: Image Rotate  Backward Successfully
+[14:07:25]: Size Button is Clickable
+[14:07:26]: ZoomInButton button is Clickable
+[14:07:26]: ZoomOutButton button is Clickable
+[14:07:30]: Image Zoom In
+[14:07:37]: Image Zoom Out
+[14:07:39]: Crop Button Is Visible
+[14:07:39]: Crop Button Clickable
+[14:07:41]: CropAspect Button Is Visible
+[14:07:41]: CropAspect Button Clickable
+[14:07:43]: StateScale Button Is Visible
+[14:07:43]: StateScale Button Clickable
+[14:07:47]: Aspect Ration Scale Scrolling
+[14:07:49]: StateAspectRatio Button Is Visible
+[14:07:49]: StateAspectRatio Button Clickable
+[14:07:52]: StateRotate Button Is Visible
+[14:07:52]: StateRotate Button Clickable
+[14:07:56]: Image Rotate Forward Successfully
+[14:08:00]: Image Rotate  Backward Successfully
+[14:08:02]: Save Button Is Visible
+[14:08:02]: Save Button Clickable
+[14:08:03]: ImgCropShape Button Is Visible
+[14:08:03]: ImgCropShape Button Clickable
+[14:08:07]: Shape Selected
+[14:08:09]: Shape Button Is Visible
+[14:08:09]: Shape Button Clickable
+[14:08:11]: firstElement [[io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=com.ui.activity.SplashActivity, appPackage=com.nra.productmarketingmaker, autoGrantPermissions=true, automationName=UIAutomator2, databaseEnabled=false, desired={platformName=android, appActivity=com.ui.activity.SplashActivity, appPackage=com.nra.productmarketingmaker, autoGrantPermissions=true, automationName=UIAutomator2, deviceName=330033acecf394bd, fullReset=false, noReset=true, platformVersion=8.1}, deviceApiLevel=27, deviceManufacturer=samsung, deviceModel=SM-G610F, deviceName=330033acecf394bd, deviceScreenDensity=480, deviceScreenSize=1080x1920, deviceUDID=330033acecf394bd, fullReset=false, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=true, pixelRatio=3, platform=LINUX, platformName=Android, platformVersion=8.1.0, statBarHeight=72, takesScreenshot=true, viewportRect={left=0, top=72, width=1080, height=1848}, warnings={}, webStorageEnabled=false}] -> id: com.nra.productmarketingmaker:id/horiShapeListView]
+[14:08:11]: lastElement [[io.appium.java_client.android.AndroidDriver, Capabilities: {appActivity=com.ui.activity.SplashActivity, appPackage=com.nra.productmarketingmaker, autoGrantPermissions=true, automationName=UIAutomator2, databaseEnabled=false, desired={platformName=android, appActivity=com.ui.activity.SplashActivity, appPackage=com.nra.productmarketingmaker, autoGrantPermissions=true, automationName=UIAutomator2, deviceName=330033acecf394bd, fullReset=false, noReset=true, platformVersion=8.1}, deviceApiLevel=27, deviceManufacturer=samsung, deviceModel=SM-G610F, deviceName=330033acecf394bd, deviceScreenDensity=480, deviceScreenSize=1080x1920, deviceUDID=330033acecf394bd, fullReset=false, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=true, noReset=true, pixelRatio=3, platform=LINUX, platformName=Android, platformVersion=8.1.0, statBarHeight=72, takesScreenshot=true, viewportRect={left=0, top=72, width=1080, height=1848}, warnings={}, webStorageEnabled=false}] -> id: com.nra.productmarketingmaker:id/horiShapeListView]
+[14:08:11]: fromPoint (540, 1828)
+[14:08:11]: endPoint (540, 1828)
+[14:08:11]: swipe
+[14:08:45]: finding...
+[14:08:45]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[14:09:15]: isDisplayed: false
+[14:09:16]: COUNT 1
+[14:09:16]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[14:09:46]: isDisplayed: false
+[14:09:47]: COUNT 2
+[14:09:47]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[14:10:17]: isDisplayed: false
+[14:10:17]: COUNT 3
+[14:10:17]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[14:10:47]: isDisplayed: false

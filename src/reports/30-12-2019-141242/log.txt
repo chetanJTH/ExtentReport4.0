@@ -1,0 +1,39 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[14:12:43]: =====START TEST=====
+[14:12:58]: [Driver on SamsungJ7] setup is completed!
+[14:12:58]: [APP] ProductMarketing is running...
+[14:12:59]: FontAutoSave is RUNNING...
+[14:13:05]: My Design Button Clickable
+[14:13:07]: Create Own Button Clickable
+[14:13:10]: Custom Size Selected
+[14:13:14]: AddText Button Clickable
+[14:13:16]: Click On Text Feild
+[14:13:17]: Text is Entered
+[14:13:20]: Press Ok Button
+[14:13:34]: Select MyDesign Page
+[14:13:37]: Card Is Present In My Design
+[14:13:37]: AutoSave Card Is Present In My Design
+[14:13:37]: AutoSave Card Clicked
+[14:14:34]: Select Edit Button
+[14:14:37]: FontAutoSave is PASSED...
+[14:14:37]: FontSave is RUNNING...
+[14:14:37]: AddText Button Clickable
+[14:14:39]: Click On Text Feild
+[14:14:40]: Text is Entered
+[14:14:43]: Press Ok Button
+[14:14:46]: Size Button is Clickable
+[14:14:50]: Text Zoom In
+[14:14:51]: Save Button Is Visible
+[14:14:52]: Save Button Clicked
+[14:14:53]: Original Option Visible
+[14:14:54]: Original Option Clicked
+[14:14:57]: NotNow Button Clicked
+[14:14:59]: Select MyDesign Page
+[14:15:02]: Card Is Present In My Design
+[14:15:02]: Card Is Not Present In My Design
+[14:15:33]: FontSave is FAILED...
+[14:15:35]: [APP] ProductMarketing has been stopped
+[14:15:35]: =====FINISH TEST=====

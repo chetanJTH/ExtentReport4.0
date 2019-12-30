@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OB Automation Test]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.testListener"/>
+  </listeners>
+  <test parallel="classes" name="Tests(failed)">
+    <classes>
+      <class name="Suite.FontSuite">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="flushReport"/>
+          <include name="endTest"/>
+          <include name="test04"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- Suite.FontSuite -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [OB Automation Test] -->

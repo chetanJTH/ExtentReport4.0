@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OB Automation Test">
+
+    <listeners>
+        <listener class-name="utils.testListener"/>
+    </listeners>
+
+    <suite-files>
+
+        <suite-file path="Font_Module.xml"></suite-file>
+
+        <suite-file path="Image_Module.xml"></suite-file>
+
+
+    </suite-files>
+
+
+
+
+</suite>

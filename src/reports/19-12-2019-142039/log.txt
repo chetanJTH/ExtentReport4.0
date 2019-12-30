@@ -1,0 +1,70 @@
+
+Copyright Â© 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[14:20:55]: [Driver on SamsungJ7] setup is completed!
+[14:20:55]: [APP] ProductMarketing is running...
+[14:21:03]: Select Edit Button
+[14:21:03]: Navigate To My Design
+[14:21:05]: Select Create Your Own
+[14:21:08]: Select Custom Template Card
+[14:21:11]: AddImage Button Is Visible
+[14:21:12]: AddImage Button Clickable
+[14:21:13]: Choose Image Button Is Visible
+[14:21:15]: Choose Image Button Clickable
+[14:21:18]: Select Image
+[14:21:20]: Erase Button Is Visible
+[14:21:20]: Erase Button Clickable
+[14:21:22]: EraseImage Button Is Visible
+[14:21:22]: EraseImage Button Clickable
+[14:21:32]: Save Button Is Visible
+[14:21:32]: Save Button Clickable
+[14:21:34]: Undo Button Clicked
+[14:21:35]: Erase Button Clickable
+[14:21:36]: EraseImage Button Clickable
+[14:21:47]: Save Button Clickable
+[14:21:54]: App Minimize
+[14:21:58]: Undo Button Clicked
+[14:21:58]: Erase Button Clickable
+[14:22:00]: AutoEraseImage Button Is Visible
+[14:22:00]: AutoEraseImage Button Clickable
+[14:22:03]: Save Croped Shape
+[14:22:05]: Undo Button Clicked
+[14:22:05]: Top position button is Clickable
+[14:22:06]: Bottom position button is Clickable
+[14:22:07]: Left position button is Clickable
+[14:22:07]: Right position button is Clickable
+[14:22:07]: All Position Buttons Working Properly
+[14:22:09]: TextRotationCase Button is Clickable
+[14:22:09]: AntiClockRotate button is Clickable
+[14:22:10]: ClockWiseRotate button is Clickable
+[14:22:14]: Image Rotate Forward Successfully
+[14:22:19]: Image Rotate  Backward Successfully
+[14:22:21]: Size Button is Clickable
+[14:22:22]: ZoomInButton button is Clickable
+[14:22:23]: ZoomOutButton button is Clickable
+[14:22:27]: Image Zoom In
+[14:22:33]: Image Zoom Out
+[14:22:35]: Crop Button Is Visible
+[14:22:36]: Crop Button Clickable
+[14:22:38]: CropAspect Button Is Visible
+[14:22:38]: CropAspect Button Clickable
+[14:22:40]: StateScale Button Is Visible
+[14:22:40]: StateScale Button Clickable
+[14:22:43]: Aspect Ration Scale Scrolling
+[14:22:45]: StateAspectRatio Button Is Visible
+[14:22:45]: StateAspectRatio Button Clickable
+[14:22:48]: StateRotate Button Is Visible
+[14:22:48]: StateRotate Button Clickable
+[14:22:52]: Image Rotate Forward Successfully
+[14:22:56]: Image Rotate  Backward Successfully
+[14:22:58]: Save Button Is Visible
+[14:22:58]: Save Button Clickable
+[14:22:59]: ImgCropShape Button Is Visible
+[14:22:59]: ImgCropShape Button Clickable
+[14:23:03]: Shape Selected
+[14:23:06]: Save Croped Shape
+[14:23:07]: BkGround Button Is Visible
+[14:23:07]: BkGround Button Clickable
+[14:24:10]: finding...
+[14:24:10]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]

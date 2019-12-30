@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Vato Automation Test">
+
+    <listeners>
+        <listener class-name="utils.testListener"/>
+    </listeners>
+
+
+    <test name="Tests" thread-count="3" parallel="classes">
+        <classes>
+            <class name="Suite.FontSuite"/>
+        </classes>
+    </test>
+
+
+</suite>

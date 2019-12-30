@@ -1,0 +1,7 @@
+
+Copyright © 2019 Vato.EC. All Rights Reserved.
+ =============================================
+
+[14:24:25]: InputStream cannot be null
+[14:24:27]: =====START TEST=====
+[14:24:38]: =====FINISH TEST=====

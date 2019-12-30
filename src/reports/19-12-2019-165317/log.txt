@@ -1,0 +1,130 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[16:53:33]: [Driver on SamsungJ7] setup is completed!
+[16:53:34]: [APP] ProductMarketing is running...
+[16:53:41]: Select Edit Button
+[16:53:42]: Navigate To My Design
+[16:53:44]: Select Create Your Own
+[16:53:46]: Select Custom Template Card
+[16:53:50]: AddImage Button Is Visible
+[16:53:50]: AddImage Button Clickable
+[16:53:52]: Choose Image Button Is Visible
+[16:53:54]: Choose Image Button Clickable
+[16:53:59]: Select Image
+[16:54:02]: Erase Button Is Visible
+[16:54:02]: Erase Button Clickable
+[16:54:04]: EraseImage Button Is Visible
+[16:54:04]: EraseImage Button Clickable
+[16:54:14]: Save Button Is Visible
+[16:54:14]: Save Button Clickable
+[16:54:17]: Undo Button Clicked
+[16:54:17]: Erase Button Clickable
+[16:54:19]: EraseImage Button Clickable
+[16:54:29]: Save Button Clickable
+[16:54:37]: App Minimize
+[16:54:40]: Undo Button Clicked
+[16:54:41]: Erase Button Clickable
+[16:54:43]: AutoEraseImage Button Is Visible
+[16:54:43]: AutoEraseImage Button Clickable
+[16:54:46]: Save Croped Shape
+[16:54:48]: Undo Button Clicked
+[16:54:49]: Top position button is Clickable
+[16:54:49]: Bottom position button is Clickable
+[16:54:50]: Left position button is Clickable
+[16:54:51]: Right position button is Clickable
+[16:54:51]: All Position Buttons Working Properly
+[16:54:52]: TextRotationCase Button is Clickable
+[16:54:53]: AntiClockRotate button is Clickable
+[16:54:54]: ClockWiseRotate button is Clickable
+[16:54:58]: Image Rotate Forward Successfully
+[16:55:03]: Image Rotate  Backward Successfully
+[16:55:05]: Size Button is Clickable
+[16:55:06]: ZoomInButton button is Clickable
+[16:55:07]: ZoomOutButton button is Clickable
+[16:55:11]: Image Zoom In
+[16:55:18]: Image Zoom Out
+[16:55:20]: Crop Button Is Visible
+[16:55:21]: Crop Button Clickable
+[16:55:23]: CropAspect Button Is Visible
+[16:55:23]: CropAspect Button Clickable
+[16:55:25]: Aspect Crop Editor Visible
+[16:55:25]: StateScale Button Is Visible
+[16:55:25]: StateScale Button Clickable
+[16:55:27]: Scale Scroll Seekbar Is Visible
+[16:55:31]: Aspect Ration Scale Scrolling
+[16:55:34]: StateAspectRatio Button Is Visible
+[16:55:34]: StateAspectRatio Button Clickable
+[16:55:38]: StateRotate Button Is Visible
+[16:55:38]: StateRotate Button Clickable
+[16:55:40]: Scale Rotate Seekbar Is Visible
+[16:55:42]: Image Rotate Forward Successfully
+[16:55:46]: Image Rotate  Backward Successfully
+[16:55:48]: Save Button Is Visible
+[16:55:48]: Save Button Clickable
+[16:55:49]: ImgCropShape Button Is Visible
+[16:55:50]: ImgCropShape Button Clickable
+[16:55:54]: Shape Selected
+[16:55:56]: CropShape Editor Visible
+[16:55:56]: Shape Button Is Visible
+[16:55:56]: Shape Button Clickable
+[16:55:58]: fromPoint (1068, 1827)
+[16:55:58]: endPoint (86, 1827)
+[16:55:58]: total: 7
+[16:55:58]: Save Croped Shape
+[16:56:01]: ImgCropShape Button Clickable
+[16:56:02]: Shape Selected
+[16:56:04]: BkGround Button Is Visible
+[16:56:04]: BkGround Button Clickable
+[16:56:05]: Click on Pattern
+[16:56:08]: fromPoint (1051, 1831)
+[16:56:08]: endPoint (63, 1831)
+[16:56:08]: total: 9
+[16:56:09]: Save Croped Shape
+[16:56:43]: ImgCropShape Button Clickable
+[16:56:44]: Shape Selected
+[16:56:46]: BkGround Button Is Visible
+[16:56:46]: BkGround Button Clickable
+[16:56:47]: Click on Pattern
+[16:56:50]: fromPoint (1051, 1831)
+[16:56:50]: endPoint (63, 1831)
+[16:56:50]: total: 9
+[16:56:50]: Save Croped Shape
+[16:56:54]: ImgCropShape Button Clickable
+[16:56:56]: Shape Selected
+[16:56:58]: Adjustment Button Is Visible
+[16:56:58]: Adjustment Button Clickable
+[16:57:01]: Rotate Button Is Visible
+[16:57:01]: Rotate Button Clickable
+[16:57:02]: AntiClockRotate button is Clickable
+[16:57:02]: ClockWiseRotate button is Clickable
+[16:57:04]: Image Rotate Forward Successfully
+[16:57:09]: Image Rotate  Backward Successfully
+[16:57:11]: Save Croped Shape
+[16:57:14]: ImgCropShape Button Clickable
+[16:57:16]: Shape Selected
+[16:57:18]: Adjustment Button Clickable
+[16:57:18]: Size Button Is Visible
+[16:57:19]: Size Button Clickable
+[16:57:20]: ZoomInButton button is Clickable
+[16:57:20]: ZoomOutButton button is Clickable
+[16:57:50]: finding...
+[16:57:50]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[16:58:21]: isDisplayed: false
+[16:58:21]: COUNT 1
+[16:58:21]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[16:58:51]: isDisplayed: false
+[16:58:52]: COUNT 2
+[16:58:52]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[16:59:22]: isDisplayed: false
+[16:59:22]: COUNT 3
+[16:59:22]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[16:59:53]: isDisplayed: false
+[16:59:53]: COUNT 4
+[16:59:53]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[16:59:55]: isDisplayed: true
+[16:59:55]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[16:59:56]: find completed...
+[16:59:57]: Opacity Button is Clickable
+[17:00:01]: Descrease Opacity

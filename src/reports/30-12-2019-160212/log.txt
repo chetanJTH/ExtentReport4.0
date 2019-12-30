@@ -1,0 +1,38 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[16:02:13]: =====START TEST=====
+[16:02:29]: [Driver on SamsungJ7] setup is completed!
+[16:02:29]: [APP] ProductMarketing is running...
+[16:02:30]: AddText is RUNNING...
+[16:02:36]: My Design Button Is Visible
+[16:02:37]: My Design Button Clickable
+[16:02:39]: Create Own Button Is Visible
+[16:02:39]: Create Own Button Clickable
+[16:02:42]: Custom Size Selected
+[16:02:46]: AddText Button Is Visible
+[16:02:46]: AddText Button Clickable
+[16:02:48]: Input Text Field Is Visible
+[16:02:49]: Input Text Auto
+[16:02:52]: Ok Button Is Visible
+[16:02:53]: Ok Button Is Clickable
+[16:02:54]: AddText is PASSED...
+[16:02:54]: [APP] ProductMarketing has been stopped
+[16:02:55]: =====FINISH TEST=====
+[16:02:55]: =====START TEST=====
+[16:03:09]: [Driver on SamsungJ7] setup is completed!
+[16:03:09]: [APP] ProductMarketing is running...
+[16:03:11]: AddImage is RUNNING...
+[16:03:17]: Select Edit Button
+[16:03:18]: Navigate To My Design
+[16:03:20]: Select Create Your Own
+[16:03:22]: Select Custom Template Card
+[16:03:26]: AddImage Button Is Visible
+[16:03:26]: AddImage Button Clickable
+[16:03:28]: Choose Image Button Is Visible
+[16:03:30]: Choose Image Button Clickable
+[16:03:33]: Select Image
+[16:03:34]: AddImage is PASSED...
+[16:03:34]: [APP] ProductMarketing has been stopped
+[16:03:35]: =====FINISH TEST=====

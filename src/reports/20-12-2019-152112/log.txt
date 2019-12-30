@@ -1,0 +1,514 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[15:21:13]: =====START TEST=====
+[15:21:31]: [Driver on SamsungJ7] setup is completed!
+[15:21:31]: [APP] ProductMarketing is running...
+[15:21:32]: AddText is RUNNING...
+[15:21:38]: My Design Button Is Visible
+[15:21:39]: My Design Button Clickable
+[15:21:41]: Create Own Button Is Visible
+[15:21:41]: Create Own Button Clickable
+[15:21:44]: Custom Size Selected
+[15:21:48]: AddText Button Is Visible
+[15:21:48]: AddText Button Clickable
+[15:21:50]: Input Text Field Is Visible
+[15:21:51]: Input Text Auto
+[15:21:55]: Ok Button Is Visible
+[15:21:55]: Ok Button Is Clickable
+[15:21:57]: AddText is Passed
+[15:21:57]: EditText is RUNNING...
+[15:21:59]: Edit Text Is Visible
+[15:21:59]: Edit Text Is Clickable
+[15:22:01]: Click On Text Feild
+[15:22:03]: Text is Edited
+[15:22:06]: Press Ok Button
+[15:22:09]: EditText is Passed
+[15:22:09]: TextPositionButtons is RUNNING...
+[15:22:09]: Top Position Button is Displayed
+[15:22:09]: Top position button is Clickable
+[15:22:10]: Bottom Position Button is Displayed
+[15:22:10]: Bottom position button is Clickable
+[15:22:11]: Left Position Button is Displayed
+[15:22:11]: Left position button is Clickable
+[15:22:12]: Right Position Button is Displayed
+[15:22:12]: Right position button is Clickable
+[15:22:12]: All Position Buttons Working Properly
+[15:22:12]: TextPositionButtons is Passed
+[15:22:12]: TextRotation is RUNNING...
+[15:22:13]: TextRotationCase Button is Displayed
+[15:22:14]: TextRotationCase Button is Clickable
+[15:22:15]: AntiClockRotate Button is Displayed
+[15:22:15]: AntiClockRotate button is Clickable
+[15:22:16]: ClockWiseRotate Button is Displayed
+[15:22:16]: ClockWiseRotate button is Clickable
+[15:22:20]: Text Rotate Forward Successfully
+[15:22:26]: Text Rotate  Backward Successfully
+[15:22:28]: TextRotation is Passed
+[15:22:28]: TextSize is RUNNING...
+[15:22:29]: Size Button is Displayed
+[15:22:30]: Size Button is Clickable
+[15:22:31]: ZoomInButton Button is Displayed
+[15:22:31]: ZoomInButton button is Clickable
+[15:22:32]: ZoomOutButton Button is Displayed
+[15:22:32]: ZoomOutButton button is Clickable
+[15:22:35]: Text Zoom In
+[15:22:41]: Text Zoom Out
+[15:22:42]: TextSize is Passed
+[15:22:42]: AddColor is RUNNING...
+[15:22:43]: FontColor Button Is Visible
+[15:22:43]: FontColor Button Is Clickable
+[15:22:44]: swipe
+[15:22:47]: swipe
+[15:22:49]: total: 9
+[15:22:49]: FontColor is selected
+[15:22:51]: FontColor Picker Is Visible
+[15:22:51]: FontColor Picker Is Clickable
+[15:23:04]: AddColor is Passed
+[15:23:04]: FontColorCode is RUNNING...
+[15:23:04]: FontColor Picker Is Clickable
+[15:23:07]: Color Code Button Is Visible
+[15:23:07]: Color Code Button Is Clickable
+[15:23:15]: FontColorCode is Passed
+[15:23:15]: FontLibrary is RUNNING...
+[15:23:16]: Font Button Is Visible
+[15:23:17]: Font Button Is Clickable
+[15:23:18]: swipe
+[15:23:21]: FontLibrary is FAILED...
+[15:23:22]: Shadow is RUNNING...
+[15:23:23]: Shadow Button Is Visible
+[15:23:23]: Shadow Button Clickable
+[15:23:28]: Max Shadow
+[15:23:33]: Min Shadow
+[15:23:35]: Shadow is Passed
+[15:23:35]: FontStyle is RUNNING...
+[15:23:35]: FontStyleCase Button Is Visible
+[15:23:36]: FontStyleCase Button Is Clickable
+[15:23:37]: Underline Button Is Visible
+[15:23:37]: Underline Button Is Clickable
+[15:23:39]: UpperCase Button Is Visible
+[15:23:39]: UpperCase Button Is Clickable
+[15:23:41]: LowerCase Button Is Visible
+[15:23:41]: LowerCase Button Is Clickable
+[15:23:42]: TitleCase Button Is Visible
+[15:23:43]: TitleCase Button Is Clickable
+[15:23:44]: FontStyle is Passed
+[15:23:44]: FontOpacity is RUNNING...
+[15:23:45]: Opacity Button Is Visible
+[15:23:45]: Opacity Button Is Clickable
+[15:23:49]: Descrease Opacity
+[15:23:55]: Increase Opacity
+[15:23:57]: FontOpacity is Passed
+[15:23:57]: LatterSpacing is RUNNING...
+[15:23:57]: Letter Spacing Button Is Visible
+[15:23:58]: Letter Spacing Button Is Clickable
+[15:24:02]: Increase Spacing
+[15:24:07]: Descrease Spacing
+[15:24:12]: LatterSpacing is Passed
+[15:24:12]: UndoRedo is RUNNING...
+[15:24:20]: My design page clicked
+[15:24:22]: Create own clicked
+[15:24:23]: Custom size selected
+[15:24:27]: Add text button clicked
+[15:24:31]: Ok button clicked
+[15:24:33]: Undo Button Is Visible
+[15:24:33]: Undo Button Clickable
+[15:24:34]: Redo Button Is Visible
+[15:24:34]: Redo Button Clickable
+[15:24:36]: UndoRedo is Passed
+[15:24:36]: UndoRotaion is RUNNING...
+[15:24:37]: TextRotationCase button clicked
+[15:24:42]: Undo button clicked
+[15:24:43]: Redo button clicked
+[15:24:45]: UndoRotaion is Passed
+[15:24:45]: UndoSize is RUNNING...
+[15:24:46]: Size button clicked
+[15:24:50]: Undo button clicked
+[15:24:52]: Redo button clicked
+[15:24:58]: UndoSize is Passed
+[15:24:58]: UndoColor is RUNNING...
+[15:24:58]: FontColor button clicked
+[15:24:59]: total: 9
+[15:24:59]: FontColor is selected
+[15:25:00]: Undo button clicked
+[15:25:02]: Redo button clicked
+[15:25:03]: UndoColor is Passed
+[15:25:03]: UndoFont is RUNNING...
+[15:25:04]: Font Button Clicked
+[15:25:06]: swipe
+[15:25:08]: total: 3
+[15:25:08]: Font is selected
+[15:25:09]: Undo button clicked
+[15:25:11]: Redo button clicked
+[15:25:12]: UndoFont is Passed
+[15:25:12]: UndoShadow is RUNNING...
+[15:25:13]: Shadow Button Clickable
+[15:25:18]: Max Shadow
+[15:25:19]: Undo button clicked
+[15:25:20]: Redo button clicked
+[15:25:22]: UndoShadow is Passed
+[15:25:22]: UndoStyle is RUNNING...
+[15:25:23]: FontStyleCase Button Is Clickable
+[15:25:24]: Underline Button Is Clickable
+[15:25:25]: UpperCase Button Is Clickable
+[15:25:25]: LowerCase Button Is Clickable
+[15:25:26]: TitleCase Button Is Clickable
+[15:25:27]: Undo button clicked
+[15:25:27]: Undo button clicked
+[15:25:28]: Undo button clicked
+[15:25:29]: Undo button clicked
+[15:25:31]: Redo button clicked
+[15:25:31]: Redo button clicked
+[15:25:32]: Redo button clicked
+[15:25:32]: Redo button clicked
+[15:25:34]: UndoStyle is Passed
+[15:25:34]: UndoOpacity is RUNNING...
+[15:25:35]: Opacity Button Is Clickable
+[15:25:40]: Descrease Opacity
+[15:25:41]: Undo button clicked
+[15:25:43]: Redo button clicked
+[15:25:45]: UndoOpacity is Passed
+[15:25:45]: UndoLatterSpace is RUNNING...
+[15:25:45]: Letter Spacing Button Is Clickable
+[15:25:51]: Increase Spacing
+[15:25:52]: Undo button clicked
+[15:25:54]: Redo button clicked
+[15:25:59]: UndoLatterSpace is Passed
+[15:25:59]: PositionLock is RUNNING...
+[15:26:06]: My Design Button Clickable
+[15:26:08]: Create Own Button Clickable
+[15:26:11]: Custom Size Selected
+[15:26:14]: AddText Button Clickable
+[15:26:16]: Input Text Auto
+[15:26:17]: Ok Button Is Clickable
+[15:26:19]: Lock Element
+[15:26:21]: Top Position Button Clicked
+[15:26:23]: Bottom Position Button Clicked
+[15:26:24]: Left Position Button Clicked
+[15:26:25]: Right Position Button Clicked
+[15:26:26]: PositionLock is Passed
+[15:26:26]: RotationLock is RUNNING...
+[15:26:27]: TextRotationCase Button Clicked
+[15:26:28]: AntiClockRotate Button Clicked
+[15:26:30]: ClockWiseRotate Button Clicked
+[15:26:34]: Text Rotate Forward Successfully
+[15:26:38]: Text Rotate  Backward Successfully
+[15:26:40]: RotationLock is Passed
+[15:26:40]: SizeLock is RUNNING...
+[15:26:40]: Size button clicked
+[15:26:41]: Zoom in button clicked
+[15:26:43]: Zoom out button Clicked
+[15:26:45]: Unlock Element
+[15:26:48]: SizeLock is Passed
+[15:26:48]: FrameLayer is RUNNING...
+[15:26:55]: total: 2
+[15:27:02]: Select Edit Button
+[15:27:05]: Layer Button Is Visible
+[15:27:06]: Layer Button Clickable
+[15:27:10]: Close Layer
+[15:27:17]: FrameLayer is Passed
+[15:27:17]: FontParagraph is RUNNING...
+[15:27:24]: My Design Button Clickable
+[15:27:26]: Create Own Button Clickable
+[15:27:28]: Custom Size Selected
+[15:27:32]: AddText Button Clickable
+[15:27:34]: Click On Text Feild
+[15:27:35]: Paragraph CheckBox Is Visible
+[15:27:35]: Paragraph CheckBox Is Clickable
+[15:27:36]: Text is Entered
+[15:27:39]: Press Ok Button
+[15:27:42]: FontParagraph is Passed
+[15:27:42]: ParagraphEdit is RUNNING...
+[15:27:42]: Edit Text Is Clickable
+[15:27:43]: Click On Text Feild
+[15:27:44]: Paragraph CheckBox Is Clickable
+[15:27:46]: Text is Edited
+[15:27:49]: Press Ok Button
+[15:27:51]: ParagraphEdit is Passed
+[15:27:51]: ParagraphVerticalSpace is RUNNING...
+[15:27:51]: finding...
+[15:27:51]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:28:22]: isDisplayed: false
+[15:28:22]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:28:52]: isDisplayed: false
+[15:28:53]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:29:23]: isDisplayed: false
+[15:29:23]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:29:24]: isDisplayed: true
+[15:29:24]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Vertical Spacing"]
+[15:29:25]: find completed...
+[15:29:26]: Vertical Spacing Button Is Visible
+[15:29:27]: Vertical Spacing Button Is Clickable
+[15:29:31]: Increase Spacing
+[15:29:36]: Descrease Spacing
+[15:29:41]: ParagraphVerticalSpace is Passed
+[15:29:41]: ParagraphStyle is RUNNING...
+[15:29:48]: My Design Button Clickable
+[15:29:50]: Create Own Button Clickable
+[15:29:53]: Custom Size Selected
+[15:29:57]: AddText Button Clickable
+[15:29:59]: Click On Text Feild
+[15:30:00]: Paragraph CheckBox Is Clickable
+[15:30:01]: Text is Entered
+[15:30:04]: Press Ok Button
+[15:30:06]: finding...
+[15:30:06]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Style"]
+[15:30:37]: isDisplayed: false
+[15:30:37]: COUNT 1
+[15:30:37]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Style"]
+[15:31:07]: isDisplayed: false
+[15:31:08]: COUNT 2
+[15:31:08]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Style"]
+[15:31:09]: isDisplayed: true
+[15:31:09]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Style"]
+[15:31:10]: find completed...
+[15:31:11]: Left Alignment Button Is Visible
+[15:31:11]: Left Alignment Button Is Clickable
+[15:31:13]: Center Alignment Button Is Visible
+[15:31:14]: Center Alignment Button Is Clickable
+[15:31:16]: Right Alignment Button Is Visible
+[15:31:16]: Right Alignment Button Is Clickable
+[15:31:23]: ParagraphStyle is Passed
+[15:31:23]: FontAutoSave is RUNNING...
+[15:31:30]: My Design Button Clickable
+[15:31:32]: Create Own Button Clickable
+[15:31:35]: Custom Size Selected
+[15:31:39]: AddText Button Clickable
+[15:31:41]: Click On Text Feild
+[15:31:42]: Text is Entered
+[15:31:45]: Press Ok Button
+[15:31:58]: Select MyDesign Page
+[15:32:01]: Card Is Present In My Design
+[15:32:01]: AutoSave Card Is Present In My Design
+[15:32:01]: AutoSave Card Clicked
+[15:32:55]: Select Edit Button
+[15:32:58]: FontAutoSave is Passed
+[15:32:58]: FontSave is RUNNING...
+[15:32:58]: AddText Button Clickable
+[15:33:00]: Click On Text Feild
+[15:33:02]: Text is Entered
+[15:33:04]: Press Ok Button
+[15:33:07]: Size Button is Clickable
+[15:33:11]: Text Zoom In
+[15:33:13]: Save Button Is Visible
+[15:33:13]: Save Button Clicked
+[15:33:14]: Original Option Visible
+[15:33:15]: Original Option Clicked
+[15:33:17]: FontSave is FAILED...
+[15:33:18]: [APP] ProductMarketing has been stopped
+[15:33:19]: =====FINISH TEST=====
+[15:33:19]: =====START TEST=====
+[15:33:35]: [Driver on SamsungJ7] setup is completed!
+[15:33:35]: [APP] ProductMarketing is running...
+[15:33:36]: AddImage is RUNNING...
+[15:33:43]: Select Edit Button
+[15:33:43]: Navigate To My Design
+[15:33:45]: Select Create Your Own
+[15:33:47]: Select Custom Template Card
+[15:33:51]: AddImage Button Is Visible
+[15:33:51]: AddImage Button Clickable
+[15:33:53]: Choose Image Button Is Visible
+[15:33:55]: Choose Image Button Clickable
+[15:33:58]: Select Image
+[15:34:00]: AddImage is Passed
+[15:34:00]: EraseImage is RUNNING...
+[15:34:00]: Erase Button Is Visible
+[15:34:00]: Erase Button Clickable
+[15:34:02]: EraseImage Button Is Visible
+[15:34:03]: EraseImage Button Clickable
+[15:34:13]: Save Button Is Visible
+[15:34:13]: Save Button Clickable
+[15:34:15]: Undo Button Clicked
+[15:34:15]: EraseImage is Passed
+[15:34:15]: EraseMinimize is RUNNING...
+[15:34:15]: Erase Button Clickable
+[15:34:17]: EraseImage Button Clickable
+[15:34:27]: Save Button Clickable
+[15:34:35]: App Minimize
+[15:34:38]: Undo Button Clicked
+[15:34:38]: EraseMinimize is Passed
+[15:34:38]: EraseAutoFunction is RUNNING...
+[15:34:39]: Erase Button Clickable
+[15:34:41]: AutoEraseImage Button Is Visible
+[15:34:41]: AutoEraseImage Button Clickable
+[15:34:45]: Save Croped Shape
+[15:34:47]: Undo Button Clicked
+[15:34:47]: EraseAutoFunction is Passed
+[15:34:47]: ImagePosition is RUNNING...
+[15:34:48]: Top position button is Clickable
+[15:34:49]: Bottom position button is Clickable
+[15:34:49]: Left position button is Clickable
+[15:34:50]: Right position button is Clickable
+[15:34:50]: All Position Buttons Working Properly
+[15:34:50]: ImagePosition is Passed
+[15:34:50]: ImageRotation is RUNNING...
+[15:34:51]: TextRotationCase Button is Clickable
+[15:34:52]: AntiClockRotate button is Clickable
+[15:34:53]: ClockWiseRotate button is Clickable
+[15:34:57]: Image Rotate Forward Successfully
+[15:35:02]: Image Rotate  Backward Successfully
+[15:35:03]: ImageRotation is Passed
+[15:35:04]: ImageSize is RUNNING...
+[15:35:04]: Size Button is Clickable
+[15:35:05]: ZoomInButton button is Clickable
+[15:35:06]: ZoomOutButton button is Clickable
+[15:35:10]: Image Zoom In
+[15:35:16]: Image Zoom Out
+[15:35:18]: ImageSize is Passed
+[15:35:18]: CropAspect is RUNNING...
+[15:35:18]: Crop Button Is Visible
+[15:35:19]: Crop Button Clickable
+[15:35:21]: CropAspect Button Is Visible
+[15:35:21]: CropAspect Button Clickable
+[15:35:23]: Aspect Crop Editor Visible
+[15:35:23]: CropAspect is Passed
+[15:35:23]: ApsectScale is RUNNING...
+[15:35:23]: StateScale Button Is Visible
+[15:35:23]: StateScale Button Clickable
+[15:35:24]: Scale Scroll Seekbar Is Visible
+[15:35:28]: Aspect Ration Scale Scrolling
+[15:35:30]: ApsectScale is Passed
+[15:35:30]: AspectRatio is RUNNING...
+[15:35:30]: StateAspectRatio Button Is Visible
+[15:35:30]: StateAspectRatio Button Clickable
+[15:35:33]: AspectRatio is Passed
+[15:35:33]: AspectRotate is RUNNING...
+[15:35:33]: StateRotate Button Is Visible
+[15:35:33]: StateRotate Button Clickable
+[15:35:34]: Scale Rotate Seekbar Is Visible
+[15:35:37]: Image Rotate Forward Successfully
+[15:35:40]: Image Rotate  Backward Successfully
+[15:35:42]: Save Button Is Visible
+[15:35:42]: Save Button Clickable
+[15:35:42]: AspectRotate is Passed
+[15:35:42]: CropShape is RUNNING...
+[15:35:43]: ImgCropShape Button Is Visible
+[15:35:43]: ImgCropShape Button Clickable
+[15:35:45]: Shape Selected
+[15:35:47]: Crop Editor Visible
+[15:35:47]: CropShape is Passed
+[15:35:47]: CropEdit is RUNNING...
+[15:35:47]: Shape Button Is Visible
+[15:35:47]: Shape Button Clickable
+[15:35:49]: fromPoint (1068, 1827)
+[15:35:49]: endPoint (86, 1827)
+[15:35:49]: total: 7
+[15:35:50]: Save Croped Shape
+[15:35:52]: CropEdit is Passed
+[15:35:52]: CropBkGround is RUNNING...
+[15:35:52]: ImgCropShape Button Clickable
+[15:35:54]: Shape Selected
+[15:35:56]: BkGround Button Is Visible
+[15:35:56]: BkGround Button Clickable
+[15:35:57]: Click on Pattern
+[15:35:59]: fromPoint (1051, 1831)
+[15:35:59]: endPoint (63, 1831)
+[15:35:59]: total: 9
+[15:36:00]: Save Croped Shape
+[15:36:04]: CropBkGround is Passed
+[15:36:04]: CropAdjustRotate is RUNNING...
+[15:36:04]: ImgCropShape Button Clickable
+[15:36:06]: Shape Selected
+[15:36:08]: Adjustment Button Is Visible
+[15:36:08]: Adjustment Button Clickable
+[15:36:10]: Rotate Button Is Visible
+[15:36:11]: Rotate Button Clickable
+[15:36:11]: AntiClockRotate button is Clickable
+[15:36:12]: ClockWiseRotate button is Clickable
+[15:36:14]: Image Rotate Forward Successfully
+[15:36:18]: Image Rotate  Backward Successfully
+[15:36:21]: Save Croped Shape
+[15:36:23]: CropAdjustRotate is Passed
+[15:36:23]: CropAdjustSize is RUNNING...
+[15:36:24]: ImgCropShape Button Clickable
+[15:36:26]: Shape Selected
+[15:36:28]: Adjustment Button Clickable
+[15:36:29]: Size Button Is Visible
+[15:36:30]: Size Button Clickable
+[15:36:30]: ZoomInButton button is Clickable
+[15:36:31]: ZoomOutButton button is Clickable
+[15:36:33]: Image Zoom In
+[15:36:38]: Image Zoom Out
+[15:36:41]: Save Croped Shape
+[15:36:43]: CropAdjustSize is Passed
+[15:36:43]: ImageOpacity is RUNNING...
+[15:36:43]: finding...
+[15:36:43]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[15:36:44]: isDisplayed: true
+[15:36:44]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[15:36:45]: find completed...
+[15:36:46]: Opacity Button is Clickable
+[15:36:49]: Descrease Opacity
+[15:36:55]: Increase Opacity
+[15:37:00]: ImageOpacity is Passed
+[15:37:00]: ImgPositionLock is RUNNING...
+[15:37:08]: My Design Button Clickable
+[15:37:10]: Create Own Button Clickable
+[15:37:12]: Custom Size Selected
+[15:37:15]: Shape Button Is Clickable
+[15:37:19]: finding...
+[15:37:19]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Square"]
+[15:37:19]: isDisplayed: true
+[15:37:19]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Square"]
+[15:37:19]: find completed...
+[15:37:23]: Lock Element
+[15:37:25]: Top Position Button Clicked
+[15:37:27]: Bottom Position Button Clicked
+[15:37:28]: Left Position Button Clicked
+[15:37:29]: Right Position Button Clicked
+[15:37:30]: ImgPositionLock is Passed
+[15:37:30]: ImageRotationLock is RUNNING...
+[15:37:31]: TextRotationCase Button Clicked
+[15:37:32]: AntiClockRotate Button Clicked
+[15:37:34]: ClockWiseRotate Button Clicked
+[15:37:38]: Text Rotate Forward Successfully
+[15:37:43]: Text Rotate  Backward Successfully
+[15:37:44]: ImageRotationLock is Passed
+[15:37:44]: ImageSizeLock is RUNNING...
+[15:37:45]: Size button clicked
+[15:37:46]: Zoom in button clicked
+[15:37:48]: Zoom out button Clicked
+[15:37:50]: Unlock Element
+[15:37:50]: ImageSizeLock is Passed
+[15:37:50]: ImageEdit is RUNNING...
+[15:37:50]: finding...
+[15:37:50]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Edit"]
+[15:37:51]: isDisplayed: true
+[15:37:51]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Edit"]
+[15:37:51]: find completed...
+[15:37:52]: Edit Image Is Visible
+[15:37:52]: Edit Image Is Clickable
+[15:37:56]: finding...
+[15:37:56]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Square"]
+[15:37:56]: isDisplayed: true
+[15:37:56]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Square"]
+[15:37:57]: find completed...
+[15:38:01]: ImageEdit is Passed
+[15:38:01]: ImageColor is RUNNING...
+[15:38:01]: finding...
+[15:38:01]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Color"]
+[15:38:01]: isDisplayed: true
+[15:38:01]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Color"]
+[15:38:02]: find completed...
+[15:38:03]: Font Color Button Is Clickable
+[15:38:04]: swipe
+[15:38:06]: swipe
+[15:38:08]: total: 9
+[15:38:08]: Font Color is selected
+[15:38:10]: FontColor Picker Is Clickable
+[15:38:17]: Cancel Button Is Visible
+[15:38:17]: Cancel Button Clicked
+[15:38:28]: ImageColor is Passed
+[15:38:29]: ImgColorCode is RUNNING...
+[15:39:02]: ImgColorCode is FAILED...
+[15:39:03]: ImgAutoSave is RUNNING...
+[15:39:34]: ImgAutoSave is FAILED...
+[15:39:35]: ImgSave is RUNNING...
+[15:39:35]: Save Button Clicked
+[15:39:37]: Original Option Clicked
+[15:39:50]: Select MyDesign Page
+[15:39:53]: Card Is Present In My Design
+[15:40:23]: ImgSave is FAILED...
+[15:40:25]: [APP] ProductMarketing has been stopped
+[15:40:25]: =====FINISH TEST=====

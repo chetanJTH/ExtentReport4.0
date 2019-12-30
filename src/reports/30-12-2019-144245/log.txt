@@ -1,0 +1,8 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[14:42:45]: =====START TEST=====
+[14:43:01]: [Driver on SamsungJ7] setup is completed!
+[14:43:01]: [APP] ProductMarketing is running...
+[14:43:03]: AddText is RUNNING...

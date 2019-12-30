@@ -1,0 +1,87 @@
+
+Copyright Â© 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[12:58:54]: [Driver on SamsungJ7] setup is completed!
+[12:58:54]: [APP] ProductMarketing is running...
+[12:59:02]: Select Edit Button
+[12:59:03]: Navigate To My Design
+[12:59:05]: Select Create Your Own
+[12:59:07]: Select Custom Template Card
+[12:59:11]: AddImage Button Is Visible
+[12:59:11]: AddImage Button Clickable
+[12:59:13]: Choose Image Button Is Visible
+[12:59:15]: Choose Image Button Clickable
+[12:59:17]: Select Image
+[12:59:19]: Erase Button Is Visible
+[12:59:20]: Erase Button Clickable
+[12:59:22]: EraseImage Button Is Visible
+[12:59:22]: EraseImage Button Clickable
+[12:59:32]: Save Button Is Visible
+[12:59:32]: Save Button Clickable
+[12:59:34]: Undo Button Clicked
+[12:59:35]: Erase Button Clickable
+[12:59:36]: EraseImage Button Clickable
+[12:59:46]: Save Button Clickable
+[12:59:54]: App Minimize
+[12:59:57]: Undo Button Clicked
+[12:59:58]: Erase Button Clickable
+[12:59:59]: AutoEraseImage Button Is Visible
+[12:59:59]: AutoEraseImage Button Clickable
+[13:00:02]: Save Croped Shape
+[13:00:04]: Undo Button Clicked
+[13:00:04]: Top position button is Clickable
+[13:00:05]: Bottom position button is Clickable
+[13:00:06]: Left position button is Clickable
+[13:00:07]: Right position button is Clickable
+[13:00:07]: All Position Buttons Working Properly
+[13:00:08]: TextRotationCase Button is Clickable
+[13:00:09]: AntiClockRotate button is Clickable
+[13:00:10]: ClockWiseRotate button is Clickable
+[13:00:13]: Image Rotate Forward Successfully
+[13:00:18]: Image Rotate  Backward Successfully
+[13:00:20]: Size Button is Clickable
+[13:00:21]: ZoomInButton button is Clickable
+[13:00:22]: ZoomOutButton button is Clickable
+[13:00:26]: Image Zoom In
+[13:00:33]: Image Zoom Out
+[13:00:35]: Crop Button Is Visible
+[13:00:36]: Crop Button Clickable
+[13:00:37]: CropAspect Button Is Visible
+[13:00:38]: CropAspect Button Clickable
+[13:00:39]: StateScale Button Is Visible
+[13:00:39]: StateScale Button Clickable
+[13:00:44]: Aspect Ration Scale Scrolling
+[13:00:45]: StateAspectRatio Button Is Visible
+[13:00:45]: StateAspectRatio Button Clickable
+[13:00:49]: StateRotate Button Is Visible
+[13:00:49]: StateRotate Button Clickable
+[13:00:52]: Image Rotate Forward Successfully
+[13:00:56]: Image Rotate  Backward Successfully
+[13:00:58]: Save Button Is Visible
+[13:00:58]: Save Button Clickable
+[13:00:59]: ImgCropShape Button Is Visible
+[13:01:00]: ImgCropShape Button Clickable
+[13:01:03]: Shape Selected
+[13:01:05]: Shape Button Is Visible
+[13:01:05]: Shape Button Clickable
+[13:01:08]: swipe
+[13:01:10]: swipe
+[13:01:12]: swipe
+[13:01:14]: swipe
+[13:01:17]: swipe
+[13:01:19]: swipe
+[13:01:21]: swipe
+[13:01:24]: swipe
+[13:01:26]: swipe
+[13:01:28]: swipe
+[13:01:31]: swipe
+[13:01:33]: swipe
+[13:01:36]: swipe
+[13:01:38]: swipe
+[13:01:40]: swipe
+[13:01:43]: swipe
+[13:01:45]: swipe
+[13:01:47]: swipe
+[13:01:50]: swipe
+[13:01:52]: swipe

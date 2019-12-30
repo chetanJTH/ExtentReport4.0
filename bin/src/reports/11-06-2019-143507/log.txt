@@ -1,0 +1,9 @@
+
+Copyright © 2019 Vato.EC. All Rights Reserved.
+ =============================================
+
+[14:35:09]: =====START TEST=====
+[14:35:28]: [Driver] setup 9889d538314e46584a is completed!
+[14:35:41]: [Driver] setup c2000a3d0105 is completed!
+[14:35:46]: S8 is Completed
+[14:35:51]: =====FINISH TEST=====

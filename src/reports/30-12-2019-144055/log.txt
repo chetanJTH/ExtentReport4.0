@@ -1,0 +1,67 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[14:40:55]: =====START TEST=====
+[14:41:11]: [Driver on SamsungJ7] setup is completed!
+[14:41:11]: [APP] ProductMarketing is running...
+[14:41:13]: AddText is RUNNING...
+[14:41:19]: My Design Button Is Visible
+[14:41:19]: My Design Button Clickable
+[14:41:22]: Create Own Button Is Visible
+[14:41:22]: Create Own Button Clickable
+[14:41:24]: Custom Size Selected
+[14:41:28]: AddText Button Is Visible
+[14:41:28]: AddText Button Clickable
+[14:41:31]: Input Text Field Is Visible
+[14:41:31]: Input Text Auto
+[14:41:36]: Ok Button Is Visible
+[14:41:36]: Ok Button Is Clickable
+[14:41:38]: AddText is PASSED...
+[14:41:38]: EditText is RUNNING...
+[14:41:40]: Edit Text Is Visible
+[14:41:40]: Edit Text Is Clickable
+[14:41:42]: Click On Text Feild
+[14:41:44]: Text is Edited
+[14:41:47]: Press Ok Button
+[14:41:49]: EditText is PASSED...
+[14:41:49]: TextPositionButtons is RUNNING...
+[14:41:50]: Top Position Button is Displayed
+[14:41:51]: Top position button is Clickable
+[14:41:52]: Bottom Position Button is Displayed
+[14:41:52]: Bottom position button is Clickable
+[14:41:53]: Left Position Button is Displayed
+[14:41:53]: Left position button is Clickable
+[14:41:54]: Right Position Button is Displayed
+[14:41:54]: Right position button is Clickable
+[14:41:54]: All Position Buttons Working Properly
+[14:41:54]: TextPositionButtons is PASSED...
+[14:41:54]: TextRotation is RUNNING...
+[14:41:56]: TextRotationCase Button is Displayed
+[14:41:56]: TextRotationCase Button is Clickable
+[14:41:57]: AntiClockRotate Button is Displayed
+[14:41:57]: AntiClockRotate button is Clickable
+[14:41:58]: ClockWiseRotate Button is Displayed
+[14:41:58]: ClockWiseRotate button is Clickable
+[14:42:02]: Text Rotate Forward Successfully
+[14:42:08]: Text Rotate  Backward Successfully
+[14:42:10]: TextRotation is PASSED...
+[14:42:10]: TextSize is RUNNING...
+[14:42:11]: Size Button is Displayed
+[14:42:12]: Size Button is Clickable
+[14:42:12]: ZoomInButton Button is Displayed
+[14:42:13]: ZoomInButton button is Clickable
+[14:42:13]: ZoomOutButton Button is Displayed
+[14:42:14]: ZoomOutButton button is Clickable
+[14:42:17]: Text Zoom In
+[14:42:23]: Text Zoom Out
+[14:42:24]: TextSize is PASSED...
+[14:42:24]: AddColor is RUNNING...
+[14:42:25]: FontColor Button Is Visible
+[14:42:26]: FontColor Button Is Clickable
+[14:42:27]: swipe
+[14:42:29]: swipe
+[14:42:32]: total: 9
+[14:42:32]: FontColor is selected
+[14:42:33]: FontColor Picker Is Visible
+[14:42:33]: FontColor Picker Is Clickable

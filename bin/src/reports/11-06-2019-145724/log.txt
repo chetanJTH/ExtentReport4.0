@@ -1,0 +1,9 @@
+
+Copyright © 2019 Vato.EC. All Rights Reserved.
+ =============================================
+
+[14:57:26]: =====START TEST=====
+[14:57:45]: [DriverManager] setup Xiaomi is completed!
+[14:58:03]: [DriverManager] setup SamsungS8 is completed!
+[14:58:08]: S8 is Completed
+[14:58:21]: =====FINISH TEST=====

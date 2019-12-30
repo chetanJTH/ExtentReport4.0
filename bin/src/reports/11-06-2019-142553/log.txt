@@ -1,0 +1,6 @@
+
+Copyright © 2019 Vato.EC. All Rights Reserved.
+ =============================================
+
+[14:25:55]: =====START TEST=====
+[14:26:06]: =====FINISH TEST=====

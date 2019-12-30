@@ -1,0 +1,10 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[16:00:24]: =====START TEST=====
+[16:00:41]: [Driver on SamsungJ7] setup is completed!
+[16:00:41]: [APP] ProductMarketing is running...
+[16:00:43]: AddText is RUNNING...
+[16:00:48]: My Design Button Is Visible
+[16:00:49]: My Design Button Clickable

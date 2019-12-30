@@ -1,0 +1,9 @@
+
+Copyright © 2019 Vato.EC. All Rights Reserved.
+ =============================================
+
+[14:32:56]: =====START TEST=====
+[14:33:15]: [Driver] setup is completed!
+[14:33:29]: [Driver] setup is completed!
+[14:33:34]: S8 is Completed
+[14:33:39]: =====FINISH TEST=====

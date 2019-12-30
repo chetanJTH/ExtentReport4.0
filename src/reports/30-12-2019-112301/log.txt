@@ -1,0 +1,94 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[11:23:01]: =====START TEST=====
+[11:23:19]: [Driver on SamsungJ7] setup is completed!
+[11:23:19]: [APP] ProductMarketing is running...
+[11:23:21]: AddText is RUNNING...
+[11:23:26]: My Design Button Is Visible
+[11:23:27]: My Design Button Clickable
+[11:23:29]: Create Own Button Is Visible
+[11:23:29]: Create Own Button Clickable
+[11:23:32]: Custom Size Selected
+[11:23:36]: AddText Button Is Visible
+[11:23:36]: AddText Button Clickable
+[11:23:38]: Input Text Field Is Visible
+[11:23:39]: Input Text Auto
+[11:23:43]: Ok Button Is Visible
+[11:23:43]: Ok Button Is Clickable
+[11:23:44]: AddText is PASSED...
+[11:23:45]: EditText is RUNNING...
+[11:23:47]: Edit Text Is Visible
+[11:23:47]: Edit Text Is Clickable
+[11:23:49]: Click On Text Feild
+[11:23:51]: Text is Edited
+[11:23:53]: Press Ok Button
+[11:23:56]: EditText is PASSED...
+[11:23:56]: TextPositionButtons is RUNNING...
+[11:23:56]: Top Position Button is Displayed
+[11:23:57]: Top position button is Clickable
+[11:23:57]: Bottom Position Button is Displayed
+[11:23:58]: Bottom position button is Clickable
+[11:23:58]: Left Position Button is Displayed
+[11:23:59]: Left position button is Clickable
+[11:23:59]: Right Position Button is Displayed
+[11:23:59]: Right position button is Clickable
+[11:23:59]: All Position Buttons Working Properly
+[11:23:59]: TextPositionButtons is PASSED...
+[11:23:59]: TextRotation is RUNNING...
+[11:24:01]: TextRotationCase Button is Displayed
+[11:24:01]: TextRotationCase Button is Clickable
+[11:24:02]: AntiClockRotate Button is Displayed
+[11:24:02]: AntiClockRotate button is Clickable
+[11:24:03]: ClockWiseRotate Button is Displayed
+[11:24:03]: ClockWiseRotate button is Clickable
+[11:24:07]: Text Rotate Forward Successfully
+[11:24:13]: Text Rotate  Backward Successfully
+[11:24:15]: TextRotation is PASSED...
+[11:24:15]: TextSize is RUNNING...
+[11:24:16]: Size Button is Displayed
+[11:24:17]: Size Button is Clickable
+[11:24:18]: ZoomInButton Button is Displayed
+[11:24:18]: ZoomInButton button is Clickable
+[11:24:18]: ZoomOutButton Button is Displayed
+[11:24:19]: ZoomOutButton button is Clickable
+[11:24:22]: Text Zoom In
+[11:24:28]: Text Zoom Out
+[11:24:29]: TextSize is PASSED...
+[11:24:29]: AddColor is RUNNING...
+[11:24:30]: FontColor Button Is Visible
+[11:24:31]: FontColor Button Is Clickable
+[11:24:32]: swipe
+[11:24:34]: swipe
+[11:24:36]: total: 9
+[11:24:36]: FontColor is selected
+[11:24:38]: FontColor Picker Is Visible
+[11:24:38]: FontColor Picker Is Clickable
+[11:24:50]: AddColor is PASSED...
+[11:24:50]: FontColorCode is RUNNING...
+[11:24:51]: FontColor Picker Is Clickable
+[11:24:53]: Color Code Button Is Visible
+[11:24:53]: Color Code Button Is Clickable
+[11:25:02]: FontColorCode is PASSED...
+[11:25:02]: FontLibrary is RUNNING...
+[11:25:02]: Font Button Is Visible
+[11:25:03]: Font Button Is Clickable
+[11:25:04]: swipe
+[11:25:07]: total: 3
+[11:25:07]: Font is selected
+[11:25:08]: Add Font Button Is Visible
+[11:25:08]: Add Font Button Is Clickable
+[11:25:10]: Free Font Button Is Visible
+[11:25:11]: Free Font Button Is Clickable
+[11:25:30]: Back Button is Clicked
+[11:25:31]: Downloaded Font BrockScript
+[11:25:33]: Add Font Button Is Clickable
+[11:25:35]: HowTo Button Is Visible
+[11:25:35]: HowTo Button Is Clickable
+[11:26:08]: FontLibrary is FAILED...
+[11:26:10]: Shadow is RUNNING...
+[11:26:40]: Shadow is FAILED...
+[11:26:42]: FontStyle is RUNNING...
+[11:27:13]: FontStyle is FAILED...
+[11:27:15]: FontOpacity is RUNNING...

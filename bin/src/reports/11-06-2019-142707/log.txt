@@ -1,0 +1,8 @@
+
+Copyright © 2019 Vato.EC. All Rights Reserved.
+ =============================================
+
+[14:27:09]: =====START TEST=====
+[14:27:29]: [Driver] setup is completed!
+[14:27:34]: Completed
+[14:27:42]: =====FINISH TEST=====

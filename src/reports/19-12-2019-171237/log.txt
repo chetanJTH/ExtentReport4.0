@@ -1,0 +1,115 @@
+
+Copyright © 2019 OB.EC. All Rights Reserved.
+ =============================================
+
+[17:12:53]: [Driver on SamsungJ7] setup is completed!
+[17:12:53]: [APP] ProductMarketing is running...
+[17:13:01]: Select Edit Button
+[17:13:01]: Navigate To My Design
+[17:13:03]: Select Create Your Own
+[17:13:05]: Select Custom Template Card
+[17:13:09]: AddImage Button Is Visible
+[17:13:09]: AddImage Button Clickable
+[17:13:11]: Choose Image Button Is Visible
+[17:13:13]: Choose Image Button Clickable
+[17:13:17]: Select Image
+[17:13:19]: Erase Button Is Visible
+[17:13:19]: Erase Button Clickable
+[17:13:21]: EraseImage Button Is Visible
+[17:13:21]: EraseImage Button Clickable
+[17:13:31]: Save Button Is Visible
+[17:13:32]: Save Button Clickable
+[17:13:34]: Undo Button Clicked
+[17:13:34]: Erase Button Clickable
+[17:13:36]: EraseImage Button Clickable
+[17:13:46]: Save Button Clickable
+[17:13:54]: App Minimize
+[17:13:57]: Undo Button Clicked
+[17:13:58]: Erase Button Clickable
+[17:14:00]: AutoEraseImage Button Is Visible
+[17:14:00]: AutoEraseImage Button Clickable
+[17:14:02]: Save Croped Shape
+[17:14:05]: Undo Button Clicked
+[17:14:05]: Top position button is Clickable
+[17:14:06]: Bottom position button is Clickable
+[17:14:07]: Left position button is Clickable
+[17:14:07]: Right position button is Clickable
+[17:14:07]: All Position Buttons Working Properly
+[17:14:09]: TextRotationCase Button is Clickable
+[17:14:09]: AntiClockRotate button is Clickable
+[17:14:10]: ClockWiseRotate button is Clickable
+[17:14:14]: Image Rotate Forward Successfully
+[17:14:19]: Image Rotate  Backward Successfully
+[17:14:21]: Size Button is Clickable
+[17:14:22]: ZoomInButton button is Clickable
+[17:14:23]: ZoomOutButton button is Clickable
+[17:14:27]: Image Zoom In
+[17:14:33]: Image Zoom Out
+[17:14:36]: Crop Button Is Visible
+[17:14:36]: Crop Button Clickable
+[17:14:38]: CropAspect Button Is Visible
+[17:14:38]: CropAspect Button Clickable
+[17:14:40]: Aspect Crop Editor Visible
+[17:14:40]: StateScale Button Is Visible
+[17:14:40]: StateScale Button Clickable
+[17:14:42]: Scale Scroll Seekbar Is Visible
+[17:14:45]: Aspect Ration Scale Scrolling
+[17:14:48]: StateAspectRatio Button Is Visible
+[17:14:48]: StateAspectRatio Button Clickable
+[17:14:52]: StateRotate Button Is Visible
+[17:14:52]: StateRotate Button Clickable
+[17:14:55]: Scale Rotate Seekbar Is Visible
+[17:14:57]: Image Rotate Forward Successfully
+[17:15:01]: Image Rotate  Backward Successfully
+[17:15:03]: Save Button Is Visible
+[17:15:03]: Save Button Clickable
+[17:15:05]: ImgCropShape Button Is Visible
+[17:15:05]: ImgCropShape Button Clickable
+[17:15:07]: Shape Selected
+[17:15:09]: Crop Editor Visible
+[17:15:09]: Shape Button Is Visible
+[17:15:09]: Shape Button Clickable
+[17:15:11]: fromPoint (1068, 1827)
+[17:15:11]: endPoint (86, 1827)
+[17:15:11]: total: 7
+[17:15:12]: Save Croped Shape
+[17:15:14]: ImgCropShape Button Clickable
+[17:15:16]: Shape Selected
+[17:15:18]: BkGround Button Is Visible
+[17:15:18]: BkGround Button Clickable
+[17:15:19]: Click on Pattern
+[17:15:22]: fromPoint (1051, 1831)
+[17:15:22]: endPoint (63, 1831)
+[17:15:22]: total: 9
+[17:15:22]: Save Croped Shape
+[17:15:26]: ImgCropShape Button Clickable
+[17:15:28]: Shape Selected
+[17:15:30]: Adjustment Button Is Visible
+[17:15:30]: Adjustment Button Clickable
+[17:15:32]: Rotate Button Is Visible
+[17:15:32]: Rotate Button Clickable
+[17:15:33]: AntiClockRotate button is Clickable
+[17:15:33]: ClockWiseRotate button is Clickable
+[17:15:36]: Image Rotate Forward Successfully
+[17:15:40]: Image Rotate  Backward Successfully
+[17:15:43]: Save Croped Shape
+[17:15:45]: ImgCropShape Button Clickable
+[17:15:47]: Shape Selected
+[17:15:49]: Adjustment Button Clickable
+[17:15:50]: Size Button Is Visible
+[17:15:50]: Size Button Clickable
+[17:15:51]: ZoomInButton button is Clickable
+[17:15:51]: ZoomOutButton button is Clickable
+[17:15:53]: Image Zoom In
+[17:15:59]: Image Zoom Out
+[17:16:00]: finding...
+[17:16:00]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[17:16:30]: isDisplayed: false
+[17:16:31]: COUNT 1
+[17:16:31]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[17:17:01]: isDisplayed: false
+[17:17:02]: COUNT 2
+[17:17:02]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]
+[17:17:32]: isDisplayed: false
+[17:17:32]: COUNT 3
+[17:17:32]: //androidx.appcompat.app.ActionBar.Tab[@content-desc="Opacity"]

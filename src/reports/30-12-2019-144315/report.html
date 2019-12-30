@@ -1,0 +1,2990 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Automation</title>
+
+	<style type='text/css'>
+			
+            
+
+      
+        
+	</style>
+</head>
+
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Report</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Dec 30, 2019 02:43:15 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>functions</a></li>
+					<li><a href='#'>Usability</a></li>
+					<li><a href='#'>UITesting</a></li>
+					<li><a href='#'>Functionality</a></li>
+					<li><a href='#'>Sanity</a></li>
+					<li><a href='#'>Smoke</a></li>
+					<li><a href='#'>Regression</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='96.774%'><span class='strong'>30</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.226%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='17.647%'><span class='strong'>30</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.176%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='81.176%'>138</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Add Text In Card</span>
+						<span class='test-time'>Dec 30, 2019 02:43:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:43:33 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:43:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+383ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>functions</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:43:39 PM</td>
+					<td class='step-details'>My Design Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:43:42 PM</td>
+					<td class='step-details'>Create Own Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:43:48 PM</td>
+					<td class='step-details'>AddText Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:43:52 PM</td>
+					<td class='step-details'>Entered Text Auto</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:43:55 PM</td>
+					<td class='step-details'>Ok Button Is Clickable</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:43:57 PM</td>
+					<td class='step-details'><span class='label white-text green'>AddText Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Input Text.png' width='10%' src='../\30-12-2019-144315\Images\Input Text.png' data-src='../\30-12-2019-144315\Images\Input Text.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Text on Canvas.png' width='10%' src='../\30-12-2019-144315\Images\Text on Canvas.png' data-src='../\30-12-2019-144315\Images\Text on Canvas.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Edit current Text</span>
+						<span class='test-time'>Dec 30, 2019 02:43:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:43:57 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:44:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+212ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Usability</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:00 PM</td>
+					<td class='step-details'>Edit Text Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:02 PM</td>
+					<td class='step-details'>Text Input Feild Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:03 PM</td>
+					<td class='step-details'>Text Is Edited</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:06 PM</td>
+					<td class='step-details'>Ok Button Pressed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:44:09 PM</td>
+					<td class='step-details'><span class='label white-text green'>EditText Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Edit Text.png' width='10%' src='../\30-12-2019-144315\Images\Edit Text.png' data-src='../\30-12-2019-144315\Images\Edit Text.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Edit Text Done.png' width='10%' src='../\30-12-2019-144315\Images\Edit Text Done.png' data-src='../\30-12-2019-144315\Images\Edit Text Done.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Position Buttons</span>
+						<span class='test-time'>Dec 30, 2019 02:44:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:44:09 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:44:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+185ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>UITesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:09 PM</td>
+					<td class='step-details'>Top Position Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:10 PM</td>
+					<td class='step-details'>Bottom Position Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:11 PM</td>
+					<td class='step-details'>Left Position Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:12 PM</td>
+					<td class='step-details'>Right Position Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:12 PM</td>
+					<td class='step-details'>All Position Buttons Working Properly</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:44:12 PM</td>
+					<td class='step-details'><span class='label white-text green'>TextPositionButtons Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Text Rotation</span>
+						<span class='test-time'>Dec 30, 2019 02:44:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:44:12 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:44:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+854ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Functionality</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:14 PM</td>
+					<td class='step-details'>TextRotationCase Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:15 PM</td>
+					<td class='step-details'>AntiClockRotate Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:16 PM</td>
+					<td class='step-details'>ClockWiseRotate Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:44:28 PM</td>
+					<td class='step-details'><span class='label white-text green'>TextRotation Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Text Rotation Forward Case.png' width='10%' src='../\30-12-2019-144315\Images\Text Rotation Forward Case.png' data-src='../\30-12-2019-144315\Images\Text Rotation Forward Case.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Text Rotation BackWard Case.png' width='10%' src='../\30-12-2019-144315\Images\Text Rotation BackWard Case.png' data-src='../\30-12-2019-144315\Images\Text Rotation BackWard Case.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Font Size Change</span>
+						<span class='test-time'>Dec 30, 2019 02:44:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:44:28 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:44:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+311ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Functionality</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:29 PM</td>
+					<td class='step-details'>Size Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:30 PM</td>
+					<td class='step-details'>ZoomInButton Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:31 PM</td>
+					<td class='step-details'>ZoomOutButton Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:44:42 PM</td>
+					<td class='step-details'><span class='label white-text green'>TextSize Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Text Max Size.png' width='10%' src='../\30-12-2019-144315\Images\Text Max Size.png' data-src='../\30-12-2019-144315\Images\Text Max Size.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Text Min Size.png' width='10%' src='../\30-12-2019-144315\Images\Text Min Size.png' data-src='../\30-12-2019-144315\Images\Text Min Size.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Set color on Text</span>
+						<span class='test-time'>Dec 30, 2019 02:44:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:44:42 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:45:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+719ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:43 PM</td>
+					<td class='step-details'>FontColor Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:49 PM</td>
+					<td class='step-details'>FontColor Selected</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:44:51 PM</td>
+					<td class='step-details'>FontColor Picker Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:04 PM</td>
+					<td class='step-details'>FontColor Is Picked From ViewGroup</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:45:04 PM</td>
+					<td class='step-details'><span class='label white-text green'>AddColor Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Select Color From List.png' width='10%' src='../\30-12-2019-144315\Images\Select Color From List.png' data-src='../\30-12-2019-144315\Images\Select Color From List.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Color Seekbar.png' width='10%' src='../\30-12-2019-144315\Images\Color Seekbar.png' data-src='../\30-12-2019-144315\Images\Color Seekbar.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Color ViewGroup.png' width='10%' src='../\30-12-2019-144315\Images\Color ViewGroup.png' data-src='../\30-12-2019-144315\Images\Color ViewGroup.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Color Code Test</span>
+						<span class='test-time'>Dec 30, 2019 02:45:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:45:04 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:45:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+812ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:05 PM</td>
+					<td class='step-details'>FontColor Picker Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:07 PM</td>
+					<td class='step-details'>Color Code Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:13 PM</td>
+					<td class='step-details'>Font Color Is Picked From ViewGroup</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:45:16 PM</td>
+					<td class='step-details'><span class='label white-text green'>FontColorCode Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Color Code.png' width='10%' src='../\30-12-2019-144315\Images\Color Code.png' data-src='../\30-12-2019-144315\Images\Color Code.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Enter Color Code.png' width='10%' src='../\30-12-2019-144315\Images\Enter Color Code.png' data-src='../\30-12-2019-144315\Images\Enter Color Code.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Set Color.png' width='10%' src='../\30-12-2019-144315\Images\Set Color.png' data-src='../\30-12-2019-144315\Images\Set Color.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Font Library Test</span>
+						<span class='test-time'>Dec 30, 2019 02:45:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:45:16 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:45:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 42s+742ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:17 PM</td>
+					<td class='step-details'>Font Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:21 PM</td>
+					<td class='step-details'>Font is selected</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:23 PM</td>
+					<td class='step-details'>Add Font Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:25 PM</td>
+					<td class='step-details'>Free Font Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:46 PM</td>
+					<td class='step-details'>Free Font DownLoadedBrockScript</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:48 PM</td>
+					<td class='step-details'>Add Font Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:50 PM</td>
+					<td class='step-details'>HowTo Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:55 PM</td>
+					<td class='step-details'>Tutorial Video Is Visible</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:56 PM</td>
+					<td class='step-details'>Back Button Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:45:58 PM</td>
+					<td class='step-details'>Back Button Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:45:58 PM</td>
+					<td class='step-details'><span class='label white-text green'>FontLibrary Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Font Selection.png' width='10%' src='../\30-12-2019-144315\Images\Font Selection.png' data-src='../\30-12-2019-144315\Images\Font Selection.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Font Download.png' width='10%' src='../\30-12-2019-144315\Images\Font Download.png' data-src='../\30-12-2019-144315\Images\Font Download.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Font Shadow</span>
+						<span class='test-time'>Dec 30, 2019 02:45:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:45:58 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:46:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+533ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Regression</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:00 PM</td>
+					<td class='step-details'>Shadow Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:12 PM</td>
+					<td class='step-details'><span class='label white-text green'>Shadow Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Max Shadow.png' width='10%' src='../\30-12-2019-144315\Images\Max Shadow.png' data-src='../\30-12-2019-144315\Images\Max Shadow.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Min Shadow.png' width='10%' src='../\30-12-2019-144315\Images\Min Shadow.png' data-src='../\30-12-2019-144315\Images\Min Shadow.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Font Style Change</span>
+						<span class='test-time'>Dec 30, 2019 02:46:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:46:12 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:46:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+203ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Functionality</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:14 PM</td>
+					<td class='step-details'>FontStyleCase Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:14 PM</td>
+					<td class='step-details'>Underline Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:16 PM</td>
+					<td class='step-details'>UpperCase Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:18 PM</td>
+					<td class='step-details'>LowerCase Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:20 PM</td>
+					<td class='step-details'>TitleCase Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:21 PM</td>
+					<td class='step-details'><span class='label white-text green'>FontStyle Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Font Underline.png' width='10%' src='../\30-12-2019-144315\Images\Font Underline.png' data-src='../\30-12-2019-144315\Images\Font Underline.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Font UpperCase.png' width='10%' src='../\30-12-2019-144315\Images\Font UpperCase.png' data-src='../\30-12-2019-144315\Images\Font UpperCase.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Font LowerCase.png' width='10%' src='../\30-12-2019-144315\Images\Font LowerCase.png' data-src='../\30-12-2019-144315\Images\Font LowerCase.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Font TitileCase.png' width='10%' src='../\30-12-2019-144315\Images\Font TitileCase.png' data-src='../\30-12-2019-144315\Images\Font TitileCase.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Font Opacity</span>
+						<span class='test-time'>Dec 30, 2019 02:46:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:46:21 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:46:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+655ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>UITesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:22 PM</td>
+					<td class='step-details'>Opacity Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:46:34 PM</td>
+					<td class='step-details'><span class='label white-text green'>FontOpacity Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Descrese Opacity.png' width='10%' src='../\30-12-2019-144315\Images\Descrese Opacity.png' data-src='../\30-12-2019-144315\Images\Descrese Opacity.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Increase Opacity.png' width='10%' src='../\30-12-2019-144315\Images\Increase Opacity.png' data-src='../\30-12-2019-144315\Images\Increase Opacity.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify latter Spacing</span>
+						<span class='test-time'>Dec 30, 2019 02:46:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:46:34 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:47:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 44s+436ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Functionality</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:35 PM</td>
+					<td class='step-details'>Letter Spacing Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:46 PM</td>
+					<td class='step-details'>Save Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:46:48 PM</td>
+					<td class='step-details'>Original Option Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:18 PM</td>
+					<td class='step-details'>Home Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:47:18 PM</td>
+					<td class='step-details'><span class='label white-text green'>LatterSpacing Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Increase Latter Spacing.png' width='10%' src='../\30-12-2019-144315\Images\Increase Latter Spacing.png' data-src='../\30-12-2019-144315\Images\Increase Latter Spacing.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Descrease Latter Spacing.png' width='10%' src='../\30-12-2019-144315\Images\Descrease Latter Spacing.png' data-src='../\30-12-2019-144315\Images\Descrease Latter Spacing.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>Check Undo Redo Buttons</span>
+						<span class='test-time'>Dec 30, 2019 02:47:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:47:18 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:47:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+216ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:20 PM</td>
+					<td class='step-details'>My design page clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:21 PM</td>
+					<td class='step-details'>Create own clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:23 PM</td>
+					<td class='step-details'>Custom size selected</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:27 PM</td>
+					<td class='step-details'>Add Text Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:32 PM</td>
+					<td class='step-details'>Undo Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:34 PM</td>
+					<td class='step-details'>Redo Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:47:35 PM</td>
+					<td class='step-details'><span class='label white-text green'>UndoRedo Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Input Text UR.png' width='10%' src='../\30-12-2019-144315\Images\Input Text UR.png' data-src='../\30-12-2019-144315\Images\Input Text UR.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Undo Text.png' width='10%' src='../\30-12-2019-144315\Images\Undo Text.png' data-src='../\30-12-2019-144315\Images\Undo Text.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Redo Text.png' width='10%' src='../\30-12-2019-144315\Images\Redo Text.png' data-src='../\30-12-2019-144315\Images\Redo Text.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Check Undo Redo Rotation</span>
+						<span class='test-time'>Dec 30, 2019 02:47:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:47:35 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:47:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+795ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:36 PM</td>
+					<td class='step-details'>TextRotationCase button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:41 PM</td>
+					<td class='step-details'>Undo button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:43 PM</td>
+					<td class='step-details'>Redo button clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:47:44 PM</td>
+					<td class='step-details'><span class='label white-text green'>UndoRotaion Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Undo Text Rotation Text.png' width='10%' src='../\30-12-2019-144315\Images\Undo Text Rotation Text.png' data-src='../\30-12-2019-144315\Images\Undo Text Rotation Text.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Redo Text Rotation Text.png' width='10%' src='../\30-12-2019-144315\Images\Redo Text Rotation Text.png' data-src='../\30-12-2019-144315\Images\Redo Text Rotation Text.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>Check Undo Redo Size</span>
+						<span class='test-time'>Dec 30, 2019 02:47:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:47:44 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:47:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+243ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:45 PM</td>
+					<td class='step-details'>Size button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:49 PM</td>
+					<td class='step-details'>Undo button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:51 PM</td>
+					<td class='step-details'>Redo button clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:47:57 PM</td>
+					<td class='step-details'><span class='label white-text green'>UndoSize Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Undo Size Text.png' width='10%' src='../\30-12-2019-144315\Images\Undo Size Text.png' data-src='../\30-12-2019-144315\Images\Undo Size Text.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Redo Size Text.png' width='10%' src='../\30-12-2019-144315\Images\Redo Size Text.png' data-src='../\30-12-2019-144315\Images\Redo Size Text.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>Check Undo Redo Color</span>
+						<span class='test-time'>Dec 30, 2019 02:47:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:47:57 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:48:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+564ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:57 PM</td>
+					<td class='step-details'>FontColor button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:58 PM</td>
+					<td class='step-details'>FontColor is selected</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:47:59 PM</td>
+					<td class='step-details'>Undo button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:01 PM</td>
+					<td class='step-details'>Redo button clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:48:02 PM</td>
+					<td class='step-details'><span class='label white-text green'>UndoColor Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Undo color Text.png' width='10%' src='../\30-12-2019-144315\Images\Undo color Text.png' data-src='../\30-12-2019-144315\Images\Undo color Text.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Redo color Text.png' width='10%' src='../\30-12-2019-144315\Images\Redo color Text.png' data-src='../\30-12-2019-144315\Images\Redo color Text.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>Check Undo Redo Fonts</span>
+						<span class='test-time'>Dec 30, 2019 02:48:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:48:02 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:48:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+490ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:03 PM</td>
+					<td class='step-details'>Font Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:06 PM</td>
+					<td class='step-details'>Font is selected</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:07 PM</td>
+					<td class='step-details'>Undo button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:09 PM</td>
+					<td class='step-details'>Redo button clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:48:11 PM</td>
+					<td class='step-details'><span class='label white-text green'>UndoFont Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Undo Font Text.png' width='10%' src='../\30-12-2019-144315\Images\Undo Font Text.png' data-src='../\30-12-2019-144315\Images\Undo Font Text.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Redo Font Text.png' width='10%' src='../\30-12-2019-144315\Images\Redo Font Text.png' data-src='../\30-12-2019-144315\Images\Redo Font Text.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>Check Undo Redo Shadow</span>
+						<span class='test-time'>Dec 30, 2019 02:48:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:48:11 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:48:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+101ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:11 PM</td>
+					<td class='step-details'>Shadow Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:17 PM</td>
+					<td class='step-details'>Undo button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:19 PM</td>
+					<td class='step-details'>Redo button clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:48:21 PM</td>
+					<td class='step-details'><span class='label white-text green'>UndoShadow Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Undo Text Shadow.png' width='10%' src='../\30-12-2019-144315\Images\Undo Text Shadow.png' data-src='../\30-12-2019-144315\Images\Undo Text Shadow.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Redo Text Shadow.png' width='10%' src='../\30-12-2019-144315\Images\Redo Text Shadow.png' data-src='../\30-12-2019-144315\Images\Redo Text Shadow.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Check Undo Redo Style</span>
+						<span class='test-time'>Dec 30, 2019 02:48:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:48:21 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:48:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+541ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:21 PM</td>
+					<td class='step-details'>FontStyleCase Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:23 PM</td>
+					<td class='step-details'>Underline Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:23 PM</td>
+					<td class='step-details'>UpperCase Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:24 PM</td>
+					<td class='step-details'>LowerCase Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:25 PM</td>
+					<td class='step-details'>TitleCase Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:48:33 PM</td>
+					<td class='step-details'><span class='label white-text green'>UndoStyle Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Undo Font Style.png' width='10%' src='../\30-12-2019-144315\Images\Undo Font Style.png' data-src='../\30-12-2019-144315\Images\Undo Font Style.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Redo Font Style.png' width='10%' src='../\30-12-2019-144315\Images\Redo Font Style.png' data-src='../\30-12-2019-144315\Images\Redo Font Style.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>Check Undo Redo Opacity</span>
+						<span class='test-time'>Dec 30, 2019 02:48:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:48:33 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:48:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+266ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:34 PM</td>
+					<td class='step-details'>Opacity Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:40 PM</td>
+					<td class='step-details'>Undo button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:42 PM</td>
+					<td class='step-details'>Redo button clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:48:44 PM</td>
+					<td class='step-details'><span class='label white-text green'>UndoOpacity Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Undo Text Opacity.png' width='10%' src='../\30-12-2019-144315\Images\Undo Text Opacity.png' data-src='../\30-12-2019-144315\Images\Undo Text Opacity.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Redo Text Opacity.png' width='10%' src='../\30-12-2019-144315\Images\Redo Text Opacity.png' data-src='../\30-12-2019-144315\Images\Redo Text Opacity.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>Check Undo Redo LatterSpace</span>
+						<span class='test-time'>Dec 30, 2019 02:48:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:48:44 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:49:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+432ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:44 PM</td>
+					<td class='step-details'>Letter Spacing Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:51 PM</td>
+					<td class='step-details'>Undo button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:53 PM</td>
+					<td class='step-details'>Redo button clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:55 PM</td>
+					<td class='step-details'>Save Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:48:56 PM</td>
+					<td class='step-details'>Original Option Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:00 PM</td>
+					<td class='step-details'>NotNow Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:49:00 PM</td>
+					<td class='step-details'><span class='label white-text green'>UndoLatterSpace Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Undo Latter Space.png' width='10%' src='../\30-12-2019-144315\Images\Undo Latter Space.png' data-src='../\30-12-2019-144315\Images\Undo Latter Space.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Redo Latter Space.png' width='10%' src='../\30-12-2019-144315\Images\Redo Latter Space.png' data-src='../\30-12-2019-144315\Images\Redo Latter Space.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Lock Unlock Button</span>
+						<span class='test-time'>Dec 30, 2019 02:49:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:49:00 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:49:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+551ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Functionality</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:01 PM</td>
+					<td class='step-details'>My Design Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:03 PM</td>
+					<td class='step-details'>Create Own Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:09 PM</td>
+					<td class='step-details'>AddText Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:10 PM</td>
+					<td class='step-details'>Entered Text Auto</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:11 PM</td>
+					<td class='step-details'>Ok Button Is Clickable</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:12 PM</td>
+					<td class='step-details'>Element Locked By Pressing Lock Button</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:14 PM</td>
+					<td class='step-details'>Top Position Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:16 PM</td>
+					<td class='step-details'>Bottom Position Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:17 PM</td>
+					<td class='step-details'>Left Position Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:18 PM</td>
+					<td class='step-details'>Right Position Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:49:20 PM</td>
+					<td class='step-details'><span class='label white-text green'>PositionLock Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\ Position Lock.png' width='10%' src='../\30-12-2019-144315\Images\ Position Lock.png' data-src='../\30-12-2019-144315\Images\ Position Lock.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Position Button Lock.png' width='10%' src='../\30-12-2019-144315\Images\Position Button Lock.png' data-src='../\30-12-2019-144315\Images\Position Button Lock.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Position Button Locked.png' width='10%' src='../\30-12-2019-144315\Images\Position Button Locked.png' data-src='../\30-12-2019-144315\Images\Position Button Locked.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Text Rotation Lock</span>
+						<span class='test-time'>Dec 30, 2019 02:49:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:49:20 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:49:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+20ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Functionality</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:20 PM</td>
+					<td class='step-details'>TextRotationCase Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:21 PM</td>
+					<td class='step-details'>AntiClockRotate Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:23 PM</td>
+					<td class='step-details'>ClockWiseRotate Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:49:33 PM</td>
+					<td class='step-details'><span class='label white-text green'>RotationLock Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Rotaion Lock Test.png' width='10%' src='../\30-12-2019-144315\Images\Rotaion Lock Test.png' data-src='../\30-12-2019-144315\Images\Rotaion Lock Test.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Rotaion Lock.png' width='10%' src='../\30-12-2019-144315\Images\Rotaion Lock.png' data-src='../\30-12-2019-144315\Images\Rotaion Lock.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Text Rotation Forward.png' width='10%' src='../\30-12-2019-144315\Images\Text Rotation Forward.png' data-src='../\30-12-2019-144315\Images\Text Rotation Forward.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Text Rotation BackWard.png' width='10%' src='../\30-12-2019-144315\Images\Text Rotation BackWard.png' data-src='../\30-12-2019-144315\Images\Text Rotation BackWard.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Font Size Lock</span>
+						<span class='test-time'>Dec 30, 2019 02:49:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:49:33 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:50:10 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 37s+712ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Functionality</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:33 PM</td>
+					<td class='step-details'>Size Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:34 PM</td>
+					<td class='step-details'>Zoom In Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:36 PM</td>
+					<td class='step-details'>Zoom Out Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:37 PM</td>
+					<td class='step-details'>Unlock Element By Pressing Lock Button Again</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:38 PM</td>
+					<td class='step-details'>Save Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:49:40 PM</td>
+					<td class='step-details'>Original Option Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:50:10 PM</td>
+					<td class='step-details'>Home Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:50:10 PM</td>
+					<td class='step-details'><span class='label white-text green'>SizeLock Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Max Size Lock.png' width='10%' src='../\30-12-2019-144315\Images\Max Size Lock.png' data-src='../\30-12-2019-144315\Images\Max Size Lock.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Min Size Lock.png' width='10%' src='../\30-12-2019-144315\Images\Min Size Lock.png' data-src='../\30-12-2019-144315\Images\Min Size Lock.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify Layer On Canvas</span>
+						<span class='test-time'>Dec 30, 2019 02:50:10 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:50:10 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:50:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 47s+48ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>UITesting</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:50:12 PM</td>
+					<td class='step-details'>Image Is Selected</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:50:14 PM</td>
+					<td class='step-details'>Edit Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:50:18 PM</td>
+					<td class='step-details'>Layer Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:50:21 PM</td>
+					<td class='step-details'>Layer Closed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:50:25 PM</td>
+					<td class='step-details'>Save Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:50:27 PM</td>
+					<td class='step-details'>Original Option Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:50:57 PM</td>
+					<td class='step-details'>Home Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:50:57 PM</td>
+					<td class='step-details'><span class='label white-text green'>FrameLayer Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Layer View.png' width='10%' src='../\30-12-2019-144315\Images\Layer View.png' data-src='../\30-12-2019-144315\Images\Layer View.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Close Layer.png' width='10%' src='../\30-12-2019-144315\Images\Close Layer.png' data-src='../\30-12-2019-144315\Images\Close Layer.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>Font Paragraph</span>
+						<span class='test-time'>Dec 30, 2019 02:50:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:50:57 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:51:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 17s+853ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:50:59 PM</td>
+					<td class='step-details'>My Design Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:00 PM</td>
+					<td class='step-details'>Create Own Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:06 PM</td>
+					<td class='step-details'>AddText Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:08 PM</td>
+					<td class='step-details'>Text Input Feild Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:09 PM</td>
+					<td class='step-details'>Paragraph CheckBox Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:10 PM</td>
+					<td class='step-details'>Text Is Entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:13 PM</td>
+					<td class='step-details'>Ok Button Pressed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:51:15 PM</td>
+					<td class='step-details'><span class='label white-text green'>FontParagraph Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Edit Paragraph Text.png' width='10%' src='../\30-12-2019-144315\Images\Edit Paragraph Text.png' data-src='../\30-12-2019-144315\Images\Edit Paragraph Text.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Edit Paragraph Text Done.png' width='10%' src='../\30-12-2019-144315\Images\Edit Paragraph Text Done.png' data-src='../\30-12-2019-144315\Images\Edit Paragraph Text Done.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>Font Paragraph Edit</span>
+						<span class='test-time'>Dec 30, 2019 02:51:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:51:15 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:51:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+864ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:15 PM</td>
+					<td class='step-details'>Edit Text Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:17 PM</td>
+					<td class='step-details'>Text Input Feild Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:17 PM</td>
+					<td class='step-details'>Paragraph CheckBox Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:19 PM</td>
+					<td class='step-details'>Text Is Edited</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:51:22 PM</td>
+					<td class='step-details'>Ok Button Pressed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:51:24 PM</td>
+					<td class='step-details'><span class='label white-text green'>ParagraphEdit Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Edit Font Paragraph Text.png' width='10%' src='../\30-12-2019-144315\Images\Edit Font Paragraph Text.png' data-src='../\30-12-2019-144315\Images\Edit Font Paragraph Text.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Edit Font Paragraph Text Done.png' width='10%' src='../\30-12-2019-144315\Images\Edit Font Paragraph Text Done.png' data-src='../\30-12-2019-144315\Images\Edit Font Paragraph Text Done.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>Font Paragraph Vertical Space</span>
+						<span class='test-time'>Dec 30, 2019 02:51:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:51:24 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:53:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 47s+556ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:00 PM</td>
+					<td class='step-details'>Vertical Spacing Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:53:12 PM</td>
+					<td class='step-details'><span class='label white-text green'>ParagraphVerticalSpace Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Increase Vertical Spacing.png' width='10%' src='../\30-12-2019-144315\Images\Increase Vertical Spacing.png' data-src='../\30-12-2019-144315\Images\Increase Vertical Spacing.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Descrease Vertical Spacing.png' width='10%' src='../\30-12-2019-144315\Images\Descrease Vertical Spacing.png' data-src='../\30-12-2019-144315\Images\Descrease Vertical Spacing.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>Font Paragraph Style Test</span>
+						<span class='test-time'>Dec 30, 2019 02:53:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:53:12 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:53:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+789ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:14 PM</td>
+					<td class='step-details'>Left Alignment Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:17 PM</td>
+					<td class='step-details'>Center Alignment Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:20 PM</td>
+					<td class='step-details'>Right Alignment Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:23 PM</td>
+					<td class='step-details'>Save Button Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:25 PM</td>
+					<td class='step-details'>Original Option Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:28 PM</td>
+					<td class='step-details'>NotNow Button Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:53:28 PM</td>
+					<td class='step-details'><span class='label white-text green'>ParagraphStyle Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Left Alignment.png' width='10%' src='../\30-12-2019-144315\Images\Left Alignment.png' data-src='../\30-12-2019-144315\Images\Left Alignment.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Center Alignment.png' width='10%' src='../\30-12-2019-144315\Images\Center Alignment.png' data-src='../\30-12-2019-144315\Images\Center Alignment.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Right Alignment.png' width='10%' src='../\30-12-2019-144315\Images\Right Alignment.png' data-src='../\30-12-2019-144315\Images\Right Alignment.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>Font AutoSave</span>
+						<span class='test-time'>Dec 30, 2019 02:53:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:53:28 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:54:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+770ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:30 PM</td>
+					<td class='step-details'>My Design Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:31 PM</td>
+					<td class='step-details'>Create Own Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:37 PM</td>
+					<td class='step-details'>AddText Button Is Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:39 PM</td>
+					<td class='step-details'>Text Input Feild Clicked</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:41 PM</td>
+					<td class='step-details'>Text Is Entered</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:53:43 PM</td>
+					<td class='step-details'>Ok Button Pressed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:54:00 PM</td>
+					<td class='step-details'>AutoSave Card Clicked</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:54:03 PM</td>
+					<td class='step-details'><span class='label white-text green'>FontAutoSave Test Case PASSED</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Text Enter.png' width='10%' src='../\30-12-2019-144315\Images\Text Enter.png' data-src='../\30-12-2019-144315\Images\Text Enter.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\ Text Enter Done.png' width='10%' src='../\30-12-2019-144315\Images\ Text Enter Done.png' data-src='../\30-12-2019-144315\Images\ Text Enter Done.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\My Design Page.png' width='10%' src='../\30-12-2019-144315\Images\My Design Page.png' data-src='../\30-12-2019-144315\Images\My Design Page.png'></li>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Auto Save Edit Page.png' width='10%' src='../\30-12-2019-144315\Images\Auto Save Edit Page.png' data-src='../\30-12-2019-144315\Images\Auto Save Edit Page.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>Font Save</span>
+						<span class='test-time'>Dec 30, 2019 02:54:03 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 30, 2019 02:54:03 PM</span>
+	<span class='label end-time'>Dec 30, 2019 02:54:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+185ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Sanity</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>2:54:33 PM</td>
+					<td class='step-details'><span class='label white-text red'>FontSave Test case FAILED due to below issues:</span></td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>2:54:33 PM</td>
+					<td class='step-details'><textarea>org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.nra.productmarketingmaker:id/btnAddText})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+	at FontModule.FontSave.FontSaveTest(FontSave.java:44)
+	at FontModuleCase.FontSaveCase.FontSaveTestCase(FontSaveCase.java:21)
+	at BasePackage.FontSuite.FontSave(FontSuite.java:170)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@35676def (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 18 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.nra.productmarketingmaker:id/btnAddText})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'OB-35', ip: '192.168.0.149', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.4'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 20 more
+</textarea></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='../\30-12-2019-144315\Images\Failed.png' width='10%' src='../\30-12-2019-144315\Images\Failed.png' data-src='../\30-12-2019-144315\Images\Failed.png'></li>
+							</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>functions</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 30, 2019 02:43:33 PM</td>
+										<td class='linked' test-id='1'>Add Text In Card</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Usability</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 30, 2019 02:43:57 PM</td>
+										<td class='linked' test-id='2'>Edit current Text</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>UITesting</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 30, 2019 02:44:09 PM</td>
+										<td class='linked' test-id='3'>Verify Position Buttons</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:46:21 PM</td>
+										<td class='linked' test-id='11'>Font Opacity</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:50:10 PM</td>
+										<td class='linked' test-id='25'>Verify Layer On Canvas</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Functionality</span>
+						<span class='category-status right'>
+							<span class='label pass'>7</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 7</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 30, 2019 02:44:12 PM</td>
+										<td class='linked' test-id='4'>Verify Text Rotation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:44:28 PM</td>
+										<td class='linked' test-id='5'>Verify Font Size Change</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:46:12 PM</td>
+										<td class='linked' test-id='10'>Font Style Change</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:46:34 PM</td>
+										<td class='linked' test-id='12'>Verify latter Spacing</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:49:00 PM</td>
+										<td class='linked' test-id='22'>Verify Lock Unlock Button</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:49:20 PM</td>
+										<td class='linked' test-id='23'>Verify Text Rotation Lock</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:49:33 PM</td>
+										<td class='linked' test-id='24'>Verify Font Size Lock</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Sanity</span>
+						<span class='category-status right'>
+							<span class='label pass'>16</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 16</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 30, 2019 02:44:42 PM</td>
+										<td class='linked' test-id='6'>Set color on Text</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:45:04 PM</td>
+										<td class='linked' test-id='7'>Color Code Test</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:47:18 PM</td>
+										<td class='linked' test-id='13'>Check Undo Redo Buttons</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:47:35 PM</td>
+										<td class='linked' test-id='14'>Check Undo Redo Rotation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:47:44 PM</td>
+										<td class='linked' test-id='15'>Check Undo Redo Size</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:47:57 PM</td>
+										<td class='linked' test-id='16'>Check Undo Redo Color</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:48:02 PM</td>
+										<td class='linked' test-id='17'>Check Undo Redo Fonts</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:48:11 PM</td>
+										<td class='linked' test-id='18'>Check Undo Redo Shadow</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:48:21 PM</td>
+										<td class='linked' test-id='19'>Check Undo Redo Style</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:48:33 PM</td>
+										<td class='linked' test-id='20'>Check Undo Redo Opacity</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:48:44 PM</td>
+										<td class='linked' test-id='21'>Check Undo Redo LatterSpace</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:50:57 PM</td>
+										<td class='linked' test-id='26'>Font Paragraph</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:51:15 PM</td>
+										<td class='linked' test-id='27'>Font Paragraph Edit</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:51:24 PM</td>
+										<td class='linked' test-id='28'>Font Paragraph Vertical Space</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:53:12 PM</td>
+										<td class='linked' test-id='29'>Font Paragraph Style Test</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:53:28 PM</td>
+										<td class='linked' test-id='30'>Font AutoSave</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Dec 30, 2019 02:54:03 PM</td>
+										<td class='linked' test-id='31'>Font Save</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Smoke</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 30, 2019 02:45:16 PM</td>
+										<td class='linked' test-id='8'>Font Library Test</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Regression</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 30, 2019 02:45:58 PM</td>
+										<td class='linked' test-id='9'>Verify Font Shadow</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Dec 30, 2019 02:54:03 PM</td>
+                                                        <td class='linked' test-id='31'>Font Save</td>
+                                                        <td><pre><textarea>org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.nra.productmarketingmaker:id/btnAddText})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
+	at FontModule.FontSave.FontSaveTest(FontSave.java:44)
+	at FontModuleCase.FontSaveCase.FontSaveTestCase(FontSaveCase.java:21)
+	at BasePackage.FontSuite.FontSave(FontSuite.java:170)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@35676def (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 18 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.nra.productmarketingmaker:id/btnAddText})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'OB-35', ip: '192.168.0.149', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.4'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 20 more
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>31</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>170</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Dec 30, 2019 02:43:15 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Dec 30, 2019 02:54:36 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 11m 20s+979ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>OS Name</td>
+								<td>Windows 7</td>
+							</tr>
+							<tr>
+								<td>OS Version</td>
+								<td>6.1</td>
+							</tr>
+							<tr>
+								<td>Java Version</td>
+								<td>11.0.4</td>
+							</tr>
+							<tr>
+								<td>User Name</td>
+								<td>ob-chetan-pc</td>
+							</tr>
+							<tr>
+								<td>Device Test Name</td>
+								<td>330033acecf394bd</td>
+							</tr>
+							<tr>
+								<td>Device Test Version</td>
+								<td>8.1</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>functions</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Usability</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>UITesting</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Functionality</td>
+							<td>7</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Sanity</td>
+							<td>16</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									94.118%
+							</td>
+						</tr>
+						<tr>
+							<td>Smoke</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>Regression</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 30,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 1,
+				
+				passChild: 30,
+				failChild: 2,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 138,
+				exceptionsChild: 2,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 			
+            
+       $(document).ready(function() {
+             $('.dashboard-view').click();
+       });
+	
+        
+ 		</script>
+	</body>
+	
+</html>
