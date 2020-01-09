@@ -29,7 +29,7 @@ public class AddText extends BaseProduct {
 
     @Test
     public void AddTextTest() throws InterruptedException, NoSuchElementException {
-   //     test = extent.createTest("Add Text In Card");
+        test = extent.createTest("Add Text In Card");
         test.assignCategory("functions");
 
         WebDriverWait wait = new WebDriverWait(driver, 25);

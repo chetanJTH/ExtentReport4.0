@@ -99,7 +99,7 @@ public class BaseTest {
     protected SearchFeatureCase searchFeatureCase;
 
 
-    @BeforeSuite
+    @BeforeTest
     public void beforeSuite() {
 
         htmlReporter = new ExtentHtmlReporter(Utils.getReportDir() + "/report.html");

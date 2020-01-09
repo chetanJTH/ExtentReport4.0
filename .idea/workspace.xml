@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59f573b7-69b4-4f09-b509-1ef3f107508d" name="Default Changelist" comment="first step" />
+    <list default="true" id="59f573b7-69b4-4f09-b509-1ef3f107508d" name="Default Changelist" comment="first step">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BasePackage/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasePackage/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FontModule/AddText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FontModule/AddText.java" afterDir="false" />
+    </list>
     <ignored path=".idea/" />
     <ignored path=".settings/" />
     <ignored path="$PROJECT_DIR$/target/classes/" />
@@ -26,50 +32,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/BasePackage/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/BasePackage/TestManager.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/driver/DriverManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Suite.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/BasePackage/TestManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ImageModule/AddImage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="56" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/FontModule/AddText.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="544">
+              <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,8 +151,8 @@
         <option value="$PROJECT_DIR$/src/test/java/BasePackage/FontSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/BasePackage/ImageSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/FontModule/AddText.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BasePackage/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ImageModule/AddImage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BasePackage/BaseTest.java" />
       </list>
     </option>
   </component>
@@ -181,7 +163,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="829" />
@@ -198,60 +180,38 @@
         <subPane>
           <expand>
             <path>
-              <item name="AdMakerNRA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdMakerNRA" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtentReport4.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtentReport4.0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AdMakerNRA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdMakerNRA" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtentReport4.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtentReport4.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AdMakerNRA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdMakerNRA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdMakerNRA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdMakerNRA" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtentReport4.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtentReport4.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AdMakerNRA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdMakerNRA" type="462c0819:PsiDirectoryNode" />
+              <item name="ExtentReport4.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExtentReport4.0" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdMakerNRA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdMakerNRA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="FontModule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdMakerNRA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AdMakerNRA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../multi_device_demo/MutiDeviceDemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -288,7 +248,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Projects/FinaleDemo/Suite.xml">
+  <component name="RunManager" selected="TestNG.D:/Projects/AdMakerNRA/ExtentReport4.0/Suite.xml">
+    <configuration name="D:/Projects/AdMakerNRA/ExtentReport4.0/Suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AdMaker" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Suite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="D:/Projects/FinaleDemo/Font_Module.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MultiDevices" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Font_Module.xml" />
@@ -313,23 +283,6 @@
       <module name="MultiDevices" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/Suite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FontSuite" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MultiDevices" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BasePackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BasePackage" />
-      <option name="MAIN_CLASS_NAME" value="BasePackage.FontSuite" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -372,11 +325,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/Projects/AdMakerNRA/ExtentReport4.0/Suite.xml" />
         <item itemvalue="TestNG.D:/Projects/FinaleDemo/Suite.xml" />
         <item itemvalue="TestNG.D:/Projects/FinaleDemo/Image_Module.xml" />
         <item itemvalue="TestNG.D:/Projects/FinaleDemo/Font_Module.xml" />
         <item itemvalue="TestNG.ImageSuite" />
-        <item itemvalue="TestNG.FontSuite" />
       </list>
     </recent_temporary>
   </component>
@@ -403,9 +356,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__Projects_FinaleDemo_Font_Module_xml - 2019.12.30 at 14h 19m 48s.xml">
-      <configuration name="D:/Projects/FinaleDemo/Font_Module.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="D__Projects_FinaleDemo_Font_Module_xml - 2019.12.30 at 14h 38m 34s.xml">
       <configuration name="D:/Projects/FinaleDemo/Font_Module.xml" configurationId="TestNG" />
     </history-entry>
@@ -433,6 +383,9 @@
     <history-entry file="D__Projects_FinaleDemo_Suite_xml - 2019.12.30 at 16h 15m 48s.xml">
       <configuration name="D:/Projects/FinaleDemo/Suite.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="D__Projects_AdMakerNRA_ExtentReport4_0_Suite_xml - 2019.12.31 at 16h 33m 58s.xml">
+      <configuration name="D:/Projects/AdMakerNRA/ExtentReport4.0/Suite.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -447,7 +400,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28470436" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2596401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -464,7 +417,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3231623" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.041608877" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.22330096" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.22330096" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -552,20 +505,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/ImageModule/ImgCropShape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FontModuleCase/FontSaveCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FontModuleCase/FontAutoSaveCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -856,6 +795,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Suite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/FontModule/AddText.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -866,37 +812,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BasePackage/TestManager.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ImageModule/AddImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reports/31-12-2019-163231/report.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BasePackage/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="245" lean-forward="true" selection-start-line="245" selection-end-line="245" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ImageModule/AddImage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/driver/DriverManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="56" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Suite.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/BasePackage/TestManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="544">
+          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
